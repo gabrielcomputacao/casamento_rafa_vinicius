@@ -1,0 +1,14 @@
+
+
+#confirm {
+  background-image: url("../public/images/buque.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#confirm .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(129, 149, 150, 0.8);
+}

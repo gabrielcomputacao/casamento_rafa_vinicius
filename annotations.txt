@@ -1,0 +1,23 @@
+Pintereset
+https://br.pinterest.com/thauanyddiniz/site-casamento/?invite_code=55685282abc5465c944fd4933a8e844c&sender=860961791172292722
+
+drive
+https://drive.google.com/drive/folders/1lB-SpTyFkx_JEN0rPcHPI8mpuWNkITfP
+
+
+Nosso
+
+capa
+detalhes (localizacao)
+confirmação
+lista
+galeria
+contagem
+mensagem deles
+
+
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }

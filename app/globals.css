@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-casamento-inter: var(--font-inter);
+  --font-casamento-cormorant: var(--font-cormorant);
+  --font-casamento-play: var(--font-playfair);
+  --font-casamento-dm: var(--font-dm);
+  --font-casamento-relaway: var(--font-relaway);
+
+}
+
+
+@theme {
+  --color-casamento-branco: #FAF9F7;
+  --color-casamento-offblack: #1A1A1A;
+  --color-casamento-cinza: #6B6B6B;
+  --color-casamento-rosa: #E8CFCB;
+  --color-casamento-rosaescuro: #D6AFA9;
+  --color-casamento-dourado: #C6A769;
+  --color-casamento-douradominimalista: #B8965A;
+  --color-casamento-douradominimalista: #B8965A;
+
+   /* PALETA MARRIED */
+  --color-married-main: #819596;
+  --color-married-second: #7C8886;
+  --color-married-three: #737D7E;
+  --color-married-base: #C2C8C6;
+  --color-married-light: #F5F5F5;
+  --color-married-black: #2E2E26;
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #222;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

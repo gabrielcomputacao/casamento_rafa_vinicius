@@ -24,16 +24,16 @@ export function Header() {
 
   return (
     <header
-      className={`w-full bg-casamento-branco backdrop-blur-md  z-50 border-b border-gray-100  ${isOpen ? "max-h-max" : "max-h-20"}`}
+      className={`w-full bg-married-base backdrop-blur-md  z-50 border-b border-gray-100  ${isOpen ? "max-h-max" : "max-h-20"}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="shrink-0 z-50">
             <Link
               href="/"
-              className="text-3xl font-bold text-casamento-offblack font-casamento-cormorant"
+              className="text-3xl font-bold text-married-three font-casamento-cormorant"
             >
-              Ana <span className="text-married-main font-casamento-play">&</span> Bruno
+              Rafaela <span className="text-married-four font-casamento-play">&</span> Vinicius
             </Link>
           </div>
 
@@ -46,7 +46,7 @@ export function Header() {
                   e.preventDefault();
                   scrollTo(item.id);
                 }}
-                className="text-xl font-semibold text-married-second text-shadow-married-black hover:text-married-black transition-colors font-casamento-cormorant"
+                className="text-xl font-semibold text-married-three text-shadow-married-main hover:text-married-black transition-colors font-casamento-cormorant"
               >
                 {item.label}
               </a>

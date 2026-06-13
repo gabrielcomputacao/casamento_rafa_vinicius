@@ -15,18 +15,18 @@ export default function Home() {
     <div className="w-full h-full">
       <RiceRain />
       <HeroSection
-        src="/anabruno/videos/casaldancandocasamento.mp4"
-        type="video"
-        noiva="Ana"
-        noivo="Bruno"
+        src="/images/fundocasamento.jpg"
+        type="image"
+        noiva="Rafaela"
+        noivo="Vinicius"
       />
       <Countdown />
-      <WaveDivider fromColor="#C2C8C6" toColor="#fff" />
+      <WaveDivider fromColor="#F1E9D4" toColor="#fff" />
       <OurStory />
-      <WaveDivider fromColor="#fff" toColor="#819596" />
-      <EventDetails />
-       <WaveDivider fromColor="#819596" toColor="#fff" />
-      <Reception />
+     {/*  <WaveDivider fromColor="#fff" toColor="#819596" /> */}
+     {/*  <EventDetails /> */}
+      {/*  <WaveDivider fromColor="#819596" toColor="#fff" /> */}
+     {/*  <Reception /> */}
       <ConfirmGuests />
       <GifList />
       <MessageCouple />

@@ -32,7 +32,7 @@ function CalendarCard({ value, label }: { value: number; label: string }) {
             <div
               key={i}
               className="h-1.5 w-full rounded-sm"
-              style={{ backgroundColor: i % 7 === 0 ? "#819596" : "#F5F5F5" }}
+              style={{ backgroundColor: i % 7 === 0 ? "#95815a" : "#F5F5F5" }}
             />
           ))}
         </div>
@@ -43,7 +43,7 @@ function CalendarCard({ value, label }: { value: number; label: string }) {
 }
 
 export default function Countdown() {
-  const targetDate = new Date('2026-09-27T17:00:00').getTime();
+  const targetDate = new Date('2026-09-19T17:00:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
@@ -73,7 +73,7 @@ export default function Countdown() {
   ];
 
   return (
-    <section className="py-12 md:py-1 md:pt-10 bg-married-base" >
+    <section className="py-12 md:py-1 md:pt-10 bg-married-second" >
       <div className="max-w-4xl mx-auto px-6 text-center">
 
       
@@ -100,10 +100,10 @@ export default function Countdown() {
         {/* data */}
         <div className="mt-12 flex items-center justify-center gap-4">
           <span className="block h-px w-10 bg-married-black"  />
-          <p className="text-lg font-casamento-inter font-medium text-married-three" >
-            26 de Setembro de 2026
+          <p className="text-lg font-casamento-inter font-medium text-married-four" >
+            19 de Setembro de 2026
           </p>
-          <span className="block h-px w-10 bg-married-black"  />
+          <span className="block h-px w-10 bg-married-four"  />
         </div>
 
       </div>

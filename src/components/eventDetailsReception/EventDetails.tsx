@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-// 👇 Cole aqui o link do Google Maps do local da recepção
-const MAPS_URL = "https://maps.google.com/?q=Espaço+Vila+Verde+São+Paulo";
 const MAPS_EMBED =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.6533!3d-23.5605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt!2sbr!4v1234567891";
 
@@ -120,7 +118,7 @@ export default function Reception() {
             {/* foto do salão */}
             <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm">
               <Image
-                src="/anabruno/images/recantocasamento.jpg"
+                src="/images/recantocasamento.jpg"
                 alt="Espaço Vila Verde"
                 fill
                 className="object-cover"

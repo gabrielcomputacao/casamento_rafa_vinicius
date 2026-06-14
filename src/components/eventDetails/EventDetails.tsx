@@ -3,7 +3,7 @@ import Image from "next/image";
 // 👇 Cole aqui o link do Google Maps do local da cerimônia
 const MAPS_URL = "https://maps.google.com/?q=Igreja+São+Francisco+São+Paulo";
 const MAPS_EMBED =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt!2sbr!4v1234567890";
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14983.916929583527!2d-44.842997!3d-20.134914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0b1753285b873%3A0xda343a0965f62d6!2sA%20Galeria%20-%20Espa%C3%A7o%20de%20Eventos%20e%20Fotografias!5e0!3m2!1spt-BR!2sbr!4v1781476391618!5m2!1spt-BR!2sbr";
 
 const details = [
   {
@@ -104,7 +104,7 @@ export default function EventDetails() {
                 />
               </svg>
               <span className="text-xs tracking-[0.3em] uppercase text-married-four font-casamento-relaway">
-                Igreja
+                Local
               </span>
               <span className="flex-1 h-px bg-married-four" />
             </div>
@@ -143,8 +143,8 @@ export default function EventDetails() {
             {/* foto do local */}
             <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm">
               <Image
-                src="/anabruno/images/igreja2.jpg"
-                alt="Igreja São Francisco"
+                src="/images/galeriaimagem.jpg"
+                alt="A galeria"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -41,8 +41,7 @@ export default function OurStory() {
 
       <div className="relative min-h-[40vh] lg:min-h-0">
         <Image
-          //src="anabruno/images/casalcasando1.jpg"
-          src="/anabruno/images/casalcasando1.jpg"
+          src=""
           alt="Foto do casal"
           fill
           className="object-cover"

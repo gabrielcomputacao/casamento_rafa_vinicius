@@ -14,14 +14,14 @@ export default function GifList() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
             <h2 className="italic text-4xl lg:text-5xl font-light text-married-three leading-tight font-casamento-cormorant text-center">
-              Lista de <span className=" text-married-main">presentes</span>
+              Lista de <span className="text-married-main">presentes</span>
             </h2>
-            <p className="mt-4 text-center text-married-four font-light  font-casamento-relaway text-lg">
-              Sua presença é o nosso maior presente, mas, ainda sim, com carinho, separamos algumas opções simbólicas para caso queiram nos presentiar.
+            <p className="mt-4 text-center text-married-four font-light font-casamento-relaway text-lg">
+              Sua presença é o nosso maior presente, mas, ainda assim, separamos com carinho algumas opções para quem desejar nos presentear.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {listGifts.map((gift) => (
               <div
                 key={gift.id}
@@ -46,11 +46,14 @@ export default function GifList() {
                       {gift.valor}
                     </span>
                   </div>
+                  <p className="text-sm font-light leading-relaxed text-married-four/75 font-casamento-relaway">
+                    {gift.descricao}
+                  </p>
                   <button
                     onClick={() => setSelecionado(gift)}
-                    className="cursor-pointer font-casamento-relaway mt-6 w-full py-2.5 text-xs tracking-[0.2em] uppercase border border-stone-200 text-married-four hover:bg-married-four hover:text-white hover:border-married-bg-married-four transition-all duration-300"
+                    className="cursor-pointer font-casamento-relaway mt-auto w-full py-2.5 text-xs tracking-[0.2em] uppercase border border-stone-200 text-married-four hover:bg-married-four hover:text-white hover:border-married-bg-married-four transition-all duration-300"
                   >
-                    Presentear via PIX
+                    {gift.link ? "Presentear com o item" : "Presentear via PIX"}
                   </button>
                 </div>
               </div>

@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import monograma from "../../../public/images/monograma-transparente.png";
 import { useSmoothScroll } from "@/src/hooks/useSmoothScroll";
 
 type MenuItem = {
@@ -31,9 +33,19 @@ export function Header() {
           <div className="shrink-0 z-50">
             <Link
               href="/"
-              className="text-3xl font-bold text-married-three font-casamento-cormorant"
+              className="flex items-center gap-2 text-3xl font-bold text-married-three font-casamento-cormorant"
             >
-              Rafaela <span className="text-married-four font-casamento-play">&</span> Vinicius
+              <Image
+                src={monograma}
+                alt="Monograma de Rafaela e Vinicius"
+                width={54}
+                height={46}
+                className="h-12 w-auto object-contain"
+                priority
+              />
+              <span className="hidden lg:inline">
+                Rafaela <span className="text-married-four font-casamento-play">&</span> Vinicius
+              </span>
             </Link>
           </div>
 

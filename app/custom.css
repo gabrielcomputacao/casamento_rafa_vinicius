@@ -10,5 +10,5 @@
 #confirm .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(226, 211, 173, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }

@@ -8,8 +8,8 @@ const MAPS_EMBED =
 const details = [
   {
     label: "Data",
-    value: "26 de Setembro",
-    sub: "2026 · Domingo",
+    value: "19 de Setembro",
+    sub: "2026 · Sábado",
     icon: (
       <svg
         viewBox="0 0 40 40"
@@ -30,8 +30,8 @@ const details = [
   },
   {
     label: "Horário",
-    value: "17h00",
-    sub: "Pontualmente",
+    value: "16h00",
+    sub: "",
     icon: (
       <svg
         viewBox="0 0 40 40"
@@ -51,8 +51,8 @@ const details = [
   },
   {
     label: "Local",
-    value: "Igreja São Francisco",
-    sub: "Rua das Flores, 320 · São Paulo",
+    value: "A galeria",
+    sub: "Rua 8 , Grajaú, cep : 35502-341 Divinópolis Mg",
     icon: (
       <svg
         viewBox="0 0 40 40"
@@ -80,8 +80,8 @@ export default function EventDetails() {
       <div className="max-w-6xl mx-auto bg-white p-10 rounded-lg">
         {/* cabeçalho */}
         <div className="mb-16">
-          <h2 className="text-4xl lg:text-5xl font-light text-married-second leading-tight font-casamento-cormorant">
-            A <span className="italic text-married-base">cerimônia</span>
+          <h2 className="text-4xl lg:text-5xl font-light text-married-three leading-tight font-casamento-cormorant">
+            A <span className="italic text-married-main">cerimônia</span> e <span className="italic text-married-main">recepção</span>
           </h2>
         </div>
 
@@ -93,7 +93,7 @@ export default function EventDetails() {
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                className="w-4 h-4 text-married-second"
+                className="w-4 h-4 text-married-four"
                 strokeWidth={1}
               >
                 <path
@@ -103,32 +103,32 @@ export default function EventDetails() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="text-xs tracking-[0.3em] uppercase text-married-second font-casamento-relaway">
+              <span className="text-xs tracking-[0.3em] uppercase text-married-four font-casamento-relaway">
                 Igreja
               </span>
-              <span className="flex-1 h-px bg-married-base" />
+              <span className="flex-1 h-px bg-married-four" />
             </div>
 
             {/* timeline */}
             <div className="relative">
-              <div className="absolute left-5 top-5 bottom-5 w-px bg-married-base" />
+              <div className="absolute left-5 top-5 bottom-5 w-px bg-married-main" />
               <div className="space-y-0">
                 {details.map((item, i) => (
                   <div
                     key={i}
                     className="relative flex gap-8 pb-10 last:pb-0 group"
                   >
-                    <div className="relative z-10 shrink-0 w-10 h-10 rounded-full bg-white border border-married-base flex items-center justify-center text-stone-400 group-hover:border-married-second group-hover:text-stone-600 transition-all duration-300">
+                    <div className="relative z-10 shrink-0 w-10 h-10 rounded-full bg-married-base border border-married-base flex items-center justify-center text-stone-400 group-hover:border-married-second group-hover:text-stone-600 transition-all duration-300">
                       {item.icon}
                     </div>
                     <div className="pt-1">
-                      <span className="block text-base tracking-[0.25em] uppercase text-married-second mb-1.5 font-casamento-relaway">
+                      <span className="block text-base tracking-[0.25em] uppercase text-married-four mb-1.5 font-casamento-relaway">
                         {item.label}
                       </span>
-                      <span className="block text-lg font-light text-married-second leading-snug font-casamento-dm">
+                      <span className="block text-lg font-light text-married-three leading-snug font-casamento-dm">
                         {item.value}
                       </span>
-                      <span className="block text-sm text-married-second mt-0.5 font-casamento-inter">
+                      <span className="block text-sm text-married-three mt-0.5 font-casamento-inter">
                         {item.sub}
                       </span>
                     </div>

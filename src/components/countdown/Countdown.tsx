@@ -8,7 +8,7 @@ function CalendarCard({ value, label }: { value: number; label: string }) {
       <div className="w-24 md:w-32 bg-white shadow-sm overflow-hidden" >
 
         {/* topo do calendário — argolas + cor */}
-        <div className="relative flex items-center justify-center py-2 bg-married-main">
+        <div className="relative flex items-center justify-center py-2 bg-married-three">
           {/* argolas */}
           <div className="absolute -top-1 left-1/2 -translate-x-1/2 flex gap-5">
             <div className="w-2 h-3 rounded-b-full bg-white/60 border border-white/40" />
@@ -21,7 +21,7 @@ function CalendarCard({ value, label }: { value: number; label: string }) {
 
         {/* número */}
         <div className="flex items-center justify-center py-4 md:py-6">
-          <span className="text-4xl md:text-5xl font-light font-casamento-inter text-married-black" >
+          <span className="text-4xl md:text-5xl font-light font-casamento-inter text-married-four" >
             {String(value).padStart(2, '0')}
           </span>
         </div>

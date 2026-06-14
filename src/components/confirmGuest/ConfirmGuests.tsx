@@ -52,7 +52,7 @@ export default function ConvidadosClient() {
             <span className="block h-px w-10 bg-married-light" />
           </div>
 
-          <h2 className="italic text-4xl lg:text-5xl font-light font-casamento-cormorant leading-tight mb-4 text-married-black">
+          <h2 className="italic text-4xl lg:text-5xl font-light font-casamento-cormorant leading-tight mb-4 text-married-light">
             Confirme sua <em className="text-married-light" >presença</em>
           </h2>
           <p className="text-lg font-casamento-relaway font-light leading-loose  mx-auto text-married-light">
@@ -63,14 +63,14 @@ export default function ConvidadosClient() {
         {/* card do formulário */}
         <div
           className="bg-white backdrop-blur-sm px-8 py-10 shadow-sm"
-          style={{ borderColor: "#737D7E", border: "1px solid #737D7E" }}
+          style={{ borderColor: "#E2d3ad", border: "1px solid #E2d3ad" }}
         >
           {!sucesso ? (
             <form onSubmit={handleSubmit(handleOnSubmit)} className="space-y-0">
               {/* nome */}
               <div className="pb-1 mb-7">
                 <label
-                  className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-main"
+                  className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-three"
                   
                 >
                   Nome completo *
@@ -79,12 +79,12 @@ export default function ConvidadosClient() {
                   {...register("name", { required: true })}
                   placeholder="Como devemos te chamar?"
                   className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none transition-colors "
-                  style={{ color: "#737D7E" }}
+                  style={{ color: "#95815a" }}
                 />
                 {errors.name && (
                   <p
                     className="mt-2 text-xs font-casamento-relaway"
-                    style={{ color: "#819596" }}
+                    style={{ color: "#95815a" }}
                   >
                     Por favor, informe seu nome.
                   </p>
@@ -95,7 +95,7 @@ export default function ConvidadosClient() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 pb-1 mb-7">
                 <div>
                   <label
-                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-main"
+                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-three"
                     
                   >
                     E-mail
@@ -105,12 +105,12 @@ export default function ConvidadosClient() {
                     type="email"
                     placeholder="seu@email.com"
                     className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none"
-                    style={{ color: "#737D7E" }}
+                    style={{ color: "#95815a" }}
                   />
                 </div>
                 <div>
                   <label
-                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-main"
+                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-three"
                     
                   >
                     Telefone
@@ -119,7 +119,7 @@ export default function ConvidadosClient() {
                     {...register("phone")}
                     placeholder="(11) 99999-0000"
                     className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none "
-                    style={{ color: "#737D7E" }}
+                    style={{ color: "#95815a" }}
                   />
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function ConvidadosClient() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 pb-8 mb-8">
                 <div>
                   <label
-                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-main"
+                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-three"
                     
                   >
                     Acompanhantes
@@ -137,7 +137,7 @@ export default function ConvidadosClient() {
                     {...register("companions", { required: true })}
                     defaultValue={0}
                     className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none appearance-none cursor-pointer"
-                    style={{ color: "#737D7E" }}
+                    style={{ color: "#95815a" }}
                   >
                     {Array.from({ length: 11 }, (_, i) => (
                       <option key={i} value={i}>
@@ -150,7 +150,7 @@ export default function ConvidadosClient() {
                   {errors.companions && (
                     <p
                       className="mt-2 text-xs font-casamento-relaway"
-                      style={{ color: "#819596" }}
+                      style={{ color: "#95815a" }}
                     >
                       Campo obrigatório.
                     </p>
@@ -158,7 +158,7 @@ export default function ConvidadosClient() {
                 </div>
                 <div>
                   <label
-                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-main"
+                    className="block text-xs tracking-[0.25em] uppercase mb-3 font-casamento-relaway text-married-three"
                     
                   >
                     Observação
@@ -167,7 +167,7 @@ export default function ConvidadosClient() {
                     {...register("observation")}
                     placeholder="Restrição alimentar, etc."
                     className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none "
-                    style={{ color: "#737D7E" }}
+                    style={{ color: "#95815a" }}
                   />
                 </div>
               </div>
@@ -178,8 +178,8 @@ export default function ConvidadosClient() {
                   disabled={isLoading}
                   className="w-full sm:w-auto sm:min-w-56 font-casamento-relaway text-xs tracking-[0.25em] uppercase px-10 py-4 transition-all duration-500 disabled:opacity-40 rounded-base cursor-pointer"
                   style={{
-                    backgroundColor: "#737D7E",
-                    borderColor: "#737D7E",
+                    backgroundColor: "#c9b47f",
+                    borderColor: "#E2d3ad",
                     border: "1px solid",
                     color: "white",
                   }}
@@ -188,12 +188,12 @@ export default function ConvidadosClient() {
                       e.currentTarget as HTMLButtonElement
                     ).style.backgroundColor = "transparent";
                     (e.currentTarget as HTMLButtonElement).style.color =
-                      "#7C8886";
+                      "#E2d3ad";
                   }}
                   onMouseLeave={(e) => {
                     (
                       e.currentTarget as HTMLButtonElement
-                    ).style.backgroundColor = "#7C8886";
+                    ).style.backgroundColor = "#E2d3ad";
                     (e.currentTarget as HTMLButtonElement).style.color =
                       "white";
                   }}

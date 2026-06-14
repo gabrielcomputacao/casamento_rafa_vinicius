@@ -23,10 +23,10 @@ export default function Home() {
       <Countdown />
       <WaveDivider fromColor="#F1E9D4" toColor="#fff" />
       <OurStory />
-     {/*  <WaveDivider fromColor="#fff" toColor="#819596" /> */}
-     {/*  <EventDetails /> */}
-      {/*  <WaveDivider fromColor="#819596" toColor="#fff" /> */}
-     {/*  <Reception /> */}
+      <WaveDivider fromColor="#fff" toColor="#E2d3ad" />
+      <EventDetails />
+      {/*  <WaveDivider fromColor="#E2d3ad" toColor="#fff" />
+      <Reception /> */}
       <ConfirmGuests />
       <GifList />
       <MessageCouple />

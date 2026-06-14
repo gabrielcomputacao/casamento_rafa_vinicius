@@ -30,16 +30,16 @@ export default function MessageCouple() {
 
   return (
     <section id="mensagem" className="w-full bg-white py-24 px-6">
-      <div className="max-w-6xl mx-auto bg-married-base p-10 rounded-lg">
+      <div className="max-w-6xl mx-auto bg-married-second p-10 rounded-lg">
 
         {/* cabeçalho */}
         <div className="mb-16">
           
-          <h2 className="text-4xl lg:text-5xl font-light text-married-black leading-tight font-casamento-cormorant text-center">
+          <h2 className="text-4xl lg:text-5xl font-light text-married-four leading-tight font-casamento-cormorant text-center">
             Nos deixe uma{" "}
-            <em className="italic text-married-main">mensagem</em>
+            <em className="italic text-married-three">mensagem</em>
           </h2>
-          <p className="mt-5 text-lg text-married-black font-casamento-relaway font-light leading-loose  text-center">
+          <p className="mt-5 text-lg text-married-four font-casamento-relaway font-light leading-loose  text-center">
             Suas palavras significam muito para nós. Guardaremos para sempre.
           </p>
         </div>
@@ -48,8 +48,8 @@ export default function MessageCouple() {
           <form onSubmit={handleSubmit(handleOnSubmit)} className="space-y-0">
 
             {/* nome */}
-            <div className="pb-1 mb-8 border-b border-married-second">
-              <label className="block text-xs tracking-[0.25em] uppercase text-married-black mb-3 font-casamento-relaway">
+            <div className="pb-1 mb-8 border-b border-married-four">
+              <label className="block text-xs tracking-[0.25em] uppercase text-married-four mb-3 font-casamento-relaway">
                 Nome
               </label>
               <input
@@ -58,15 +58,15 @@ export default function MessageCouple() {
                 className="w-full bg-transparent py-1 text-stone-700 text-base font-casamento-cormorant placeholder:text-stone-300 focus:outline-none transition-colors"
               />
               {errors.name && (
-                <p className="mt-2 text-xs text-married-black font-casamento-relaway">
+                <p className="mt-2 text-xs text-married-four font-casamento-relaway">
                   Por favor, informe seu nome.
                 </p>
               )}
             </div>
 
             {/* mensagem */}
-            <div className="pb-1 mb-10 border-b border-married-second">
-              <label className="block text-xs tracking-[0.25em] uppercase text-married-black mb-3 font-casamento-relaway">
+            <div className="pb-1 mb-10 border-b border-married-four">
+              <label className="block text-xs tracking-[0.25em] uppercase text-married-four mb-3 font-casamento-relaway">
                 Mensagem
               </label>
               <textarea
@@ -78,11 +78,11 @@ export default function MessageCouple() {
             </div>
 
             {/* botão */}
-            <div className="flex flex-col items-start gap-4">
+            <div className="flex flex-col items-center gap-4">
               <button
                 type="submit"
                 disabled={isLoading}
-                className="border border-married-light bg-married-three text-white font-casamento-relaway text-xs tracking-[0.25em] uppercase px-10 py-4 hover:bg-white hover:text-stone-800 transition-all duration-500 disabled:opacity-40 rounded-base cursor-pointer"
+                className="border border-married-main bg-married-three text-white font-casamento-relaway text-xs tracking-[0.25em] uppercase px-10 py-4 hover:bg-white hover:text-stone-800 transition-all duration-500 disabled:opacity-40 rounded-base cursor-pointer"
               >
                 {isLoading ? (
                   <span className="flex items-center gap-2">

@@ -7,14 +7,14 @@ export default function OurStory() {
         <div className="flex items-center justify-center lg:justify-end gap-3 mb-8 w-full">
           <div className="flex items-center gap-3 ">
             <span className="h-px w-8 bg-casatext-casamento-cinza hidden lg:block" />
-            <span className="text-sm font-semibold tracking-[0.3em] uppercase text-married-main text-center lg:text-right w-full font-casamento-play">
+            <span className="text-sm font-semibold tracking-[0.3em] uppercase text-married-three text-center lg:text-right w-full font-casamento-play">
               nossa história
             </span>
           </div>
         </div>
 
-        <h2 className="italic text-5xl xl:text-5xl font-light text-married-second leading-[1.08] mb-10 w-full text-center lg:text-right font-casamento-cormorant">
-          Como tudo <span className=" text-married-base">começou</span>
+        <h2 className="italic text-5xl xl:text-5xl font-light text-married-three leading-[1.08] mb-10 w-full text-center lg:text-right font-casamento-cormorant">
+          Como tudo <span className=" text-married-main">começou</span>
         </h2>
 
         <div className="space-y-5 w-full lg:max-w-sm font-casamento-relaway">
@@ -34,7 +34,7 @@ export default function OurStory() {
           </p>
         </div>
 
-        <p className="mt-14 text-base tracking-[0.25em] uppercase text-married-second text-center lg:text-right w-full font-casamento-dm">
+        <p className="mt-14 text-base tracking-[0.25em] uppercase text-married-four text-center lg:text-right w-full font-casamento-dm">
           Juntos desde 2020
         </p>
       </div>

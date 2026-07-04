@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { saveGiftReservation } from "@/app/actions/gifts";
 import { IGift } from "./ListGifts";
 import pixQrCode from "../../../public/images/qrcoderafapix-cropped.jpeg";
@@ -58,13 +59,15 @@ export function Modal({
     }
   }
 
-  return (
+  if (typeof document === "undefined") return null;
+
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/40 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="relative bg-white w-full sm:max-w-md rounded-t-2xl sm:rounded-2xl p-6 sm:p-7 shadow-2xl"
+        className="relative bg-white w-full sm:max-w-md max-h-[85vh] overflow-y-auto rounded-2xl p-6 sm:p-7 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -182,6 +185,7 @@ export function Modal({
           </>
         )}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

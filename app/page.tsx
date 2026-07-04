@@ -7,6 +7,7 @@ import HeroSection from "@/src/components/hero/Hero";
 import Highlights from "@/src/components/highLights/HighLights";
 import MessageCouple from "@/src/components/messageCouple/MessageCouple";
 import OurStory from "@/src/components/ourStory/OurSotry";
+import Reveal from "@/src/components/reveal/Reveal";
 import RiceRain from "@/src/components/riceRain/RiceRain";
 import WaveDivider from "@/src/components/waveDivider/WaveDivider";
 
@@ -20,16 +21,28 @@ export default function Home() {
         noiva="Rafaela"
         noivo="Vinicius"
       />
-      <Countdown />
+      <Reveal>
+        <Countdown />
+      </Reveal>
       <WaveDivider fromColor="#F1E9D4" toColor="#fff" />
-      <OurStory />
+      <Reveal delay={80}>
+        <OurStory />
+      </Reveal>
       <WaveDivider fromColor="#fff" toColor="#E2d3ad" />
-      <EventDetails />
+      <Reveal delay={80}>
+        <EventDetails />
+      </Reveal>
       {/*  <WaveDivider fromColor="#E2d3ad" toColor="#fff" />
       <Reception /> */}
-      <ConfirmGuests />
-      <GifList />
-      <MessageCouple />
+      <Reveal delay={80}>
+        <ConfirmGuests />
+      </Reveal>
+      <Reveal delay={60}>
+        <GifList />
+      </Reveal>
+      <Reveal delay={80}>
+        <MessageCouple />
+      </Reveal>
     </div>
   );
 }

@@ -46,9 +46,8 @@ export default function RiceRain() {
     if (!ctx) return;
 
     const GRAIN_COUNT = 120;
-    let grains: RiceGrain[] = [];
+    const grains: RiceGrain[] = [];
     let animationId: number;
-    let tick = 0;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -101,7 +100,6 @@ export default function RiceRain() {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      tick++;
 
       grains.forEach((g, i) => {
         // Movimento: cai com ângulo + leve wobble horizontal

@@ -116,17 +116,17 @@ export default function Reception() {
           {/* esquerda — foto + mapa */}
           <div className="flex flex-col gap-6">
             {/* foto do salão */}
-            <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm">
+            <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm bg-white border border-white/40">
               <Image
                 src="/images/recantocasamento.jpg"
                 alt="Espaço Vila Verde"
                 fill
-                className="object-cover"
+                className="object-contain p-10 sm:p-12"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              {/* overlay com nome do espaço */}
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/40 to-transparent p-5">
-                <p className="text-white text-sm font-casamento-cormorant font-light">
+              {/* legenda com nome do espaço */}
+              <div className="absolute inset-x-0 bottom-0 bg-white/85 backdrop-blur-sm px-5 py-2.5">
+                <p className="text-married-four text-sm font-casamento-cormorant font-light tracking-wide">
                   Espaço Vila Verde
                 </p>
               </div>

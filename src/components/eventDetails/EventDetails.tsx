@@ -141,12 +141,12 @@ export default function EventDetails() {
           {/* direita — foto + mapa */}
           <div className="flex flex-col gap-6">
             {/* foto do local */}
-            <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm">
+            <div className="relative w-full h-56 lg:h-72 rounded-xl overflow-hidden shadow-sm bg-white border border-married-second/70">
               <Image
                 src="/images/galeriaimagem.jpg"
                 alt="A galeria"
                 fill
-                className="object-cover"
+                className="object-contain p-10 sm:p-12"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

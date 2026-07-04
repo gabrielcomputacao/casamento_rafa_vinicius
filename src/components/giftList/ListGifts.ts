@@ -8,51 +8,68 @@ import moveis from "../../../public/images/moveis-novo-lar.png";
 import enxoval from "../../../public/images/enxoval-casa.png";
 import eletrodomesticos from "../../../public/images/eletrodomesticos.png";
 import mudanca from "../../../public/images/mudanca-novo-lar.png";
-import cooktop from "../../../public/images/cooktop-inducao.png";
-import lavadora from "../../../public/images/lavadora-roupas.png";
-import coifa from "../../../public/images/coifa-parede.png";
-import forno from "../../../public/images/forno-embutir.png";
+import spa from "../../../public/images/spa.jpg";
+import vinhosQueijo from "../../../public/images/vinhosqueijo.jpg";
+import lugarLuaMel from "../../../public/images/lugarluamel.jpg";
+import presenteCasal from "../../../public/images/presentecasal.jpg";
 
-export interface IGift {
-  id: number;
+export type GiftImageSource = StaticImageData | string;
+
+export interface IBaseGift {
+  id: string;
   titulo: string;
   descricao: string;
   valor: string;
-  foto: StaticImageData;
-  pix?: string;
-  link?: string;
+  foto: GiftImageSource;
 }
+
+export interface IPixGift extends IBaseGift {
+  type: "pix";
+  pix: string;
+}
+
+export interface IPhysicalGift extends IBaseGift {
+  type: "physical";
+  storeName: string;
+  link: string;
+}
+
+export type IGift = IPixGift | IPhysicalGift;
 
 const pix =
   "00020126360014BR.GOV.BCB.PIX0114+55319937799215204000053039865802BR5925Gabriel Henrique da Silve6009SAO PAULO62140510hS9oI54x3k630412A6";
 
-const gifts: IGift[] = [
+export const pixGifts: IPixGift[] = [
   {
-    id: 1,
+    id: "pix-passagens",
+    type: "pix",
     titulo: "Passagens para a Lua de Mel",
-    descricao: "Contribuição para as passagens da nossa primeira viagem como casados.",
+    descricao: "Contribuicao para as passagens da nossa primeira viagem como casados.",
     valor: "R$ 800",
     foto: passagens,
     pix,
   },
   {
-    id: 2,
+    id: "pix-hospedagem",
+    type: "pix",
     titulo: "Hospedagem da Lua de Mel",
-    descricao: "Uma diária para aproveitarmos a lua de mel com tranquilidade.",
+    descricao: "Uma diaria para aproveitarmos a lua de mel com tranquilidade.",
     valor: "R$ 750",
     foto: hospedagem,
     pix,
   },
   {
-    id: 3,
+    id: "pix-passeio",
+    type: "pix",
     titulo: "Passeio na Lua de Mel",
-    descricao: "Uma experiência especial para conhecermos o destino da nossa viagem.",
+    descricao: "Uma experiencia especial para conhecermos o destino da nossa viagem.",
     valor: "R$ 650",
     foto: passeio,
     pix,
   },
   {
-    id: 4,
+    id: "pix-jantar",
+    type: "pix",
     titulo: "Jantar na Lua de Mel",
     descricao: "Um jantar especial para celebrarmos essa nova etapa juntos.",
     valor: "R$ 700",
@@ -60,73 +77,198 @@ const gifts: IGift[] = [
     pix,
   },
   {
-    id: 5,
-    titulo: "Móveis para o Novo Lar",
-    descricao: "Ajude-nos a completar os móveis essenciais da nossa casa.",
+    id: "pix-moveis",
+    type: "pix",
+    titulo: "Moveis para o Novo Lar",
+    descricao: "Ajude-nos a completar os moveis essenciais da nossa casa.",
     valor: "R$ 800",
     foto: moveis,
     pix,
   },
   {
-    id: 6,
+    id: "pix-enxoval",
+    type: "pix",
     titulo: "Enxoval para a Casa",
-    descricao: "Contribuição para roupas de cama, banho e itens essenciais do lar.",
+    descricao: "Contribuicao para roupas de cama, banho e itens essenciais do lar.",
     valor: "R$ 650",
     foto: enxoval,
     pix,
   },
   {
-    id: 7,
-    titulo: "Eletrodomésticos",
+    id: "pix-eletrodomesticos",
+    type: "pix",
+    titulo: "Eletrodomesticos",
     descricao: "Uma ajuda para equiparmos a cozinha e facilitarmos nossa rotina.",
     valor: "R$ 750",
     foto: eletrodomesticos,
     pix,
   },
   {
-    id: 8,
-    titulo: "Cota para a Mudança",
-    descricao: "Contribuição para organizarmos a mudança para o nosso novo lar.",
+    id: "pix-mudanca",
+    type: "pix",
+    titulo: "Cota para a Mudanca",
+    descricao: "Contribuicao para organizarmos a mudanca para o nosso novo lar.",
     valor: "R$ 500",
     foto: mudanca,
     pix,
   },
   {
-    id: 9,
-    titulo: "Cooktop de Indução 5 Bocas",
-    descricao: "Cooktop de indução EOS 90 cm, preto, para equipar nossa cozinha.",
-    valor: "Presente físico",
-    foto: cooktop,
-    link: "https://m.magazineluiza.com.br/cooktop-de-inducao-cinco-bocas-eos-90cm-preto-9500w-eci05ep-220v/p/ccd4ace474/ed/ck5b/?&seller_id=frigelar2&utm_source=google&utm_medium=cpc&utm_term=84409&utm_campaign=google_eco_per_ven_pla_ele_sor_3p_ed1-ed2-b-0326&utm_content=&partner_id=84409&gclsrc=aw.ds&gad_source=1&gad_campaignid=23600284448&gbraid=0AAAAAD4zZmQfpgmkSaPIH3nvUe6KdBrrr&gclid=CjwKCAjwuanRBhBSEiwAY5y6V7qVfYxECAMQG73L7bf7OkSf1oD4Y5JdPfrUVDkNJIxsX6FVFHMxDhoCnG8QAvD_BwE",
+    id: "pix-cafe-manha",
+    type: "pix",
+    titulo: "Cafe da Manha Especial",
+    descricao: "Um momento leve e gostoso para aproveitarmos juntos depois do casamento.",
+    valor: "R$ 800",
+    foto: vinhosQueijo,
+    pix,
   },
   {
-    id: 10,
-    titulo: "Lavadora de Roupas 14 kg",
-    descricao: "Lavadora Brastemp com cesto inox e 12 programas de lavagem.",
-    valor: "Presente físico",
-    foto: lavadora,
-    link: "https://m.magazineluiza.com.br/lavadora-de-roupas-brastemp-14kg-cesto-inox-12-programas-de-lavagem-branca-bwj14abbna/p/240738100/ed/lava/?&seller_id=magazineluiza&utm_source=google&utm_medium=cpc&utm_term=84368&utm_campaign=google_eco_per_ven_pla_ele_sor_1p_ed1-0326&utm_content=&partner_id=84368&gclsrc=aw.ds&gad_source=1&gad_campaignid=23594641914&gbraid=0AAAAAD4zZmSAAe-nLY8ztzPc-g3-AuDGg&gclid=CjwKCAjwuanRBhBSEiwAY5y6V-8Sg8N5H4qb5Y3svqwSIVnA645CzWjkZsZ-CGNbjvZ5lCpc0i3hMhoCx5AQAvD_BwE",
+    id: "pix-dia-descanso",
+    type: "pix",
+    titulo: "Dia de Descanso",
+    descricao: "Uma experiencia de descanso para recarregarmos as energias como casal.",
+    valor: "R$ 750",
+    foto: spa,
+    pix,
   },
   {
-    id: 11,
-    titulo: "Coifa de Parede 90 cm",
-    descricao: "Coifa Oster em inox com painel touch para a nossa cozinha.",
-    valor: "Presente físico",
-    foto: coifa,
-    link: "https://m.magazineluiza.com.br/coifa-de-parede-oster-inox-touch-control-90cm/p/bae0h6gf74/ed/copa/?&seller_id=osteroficial&utm_source=google&utm_medium=cpc&utm_term=84407&utm_campaign=google_eco_per_ven_pla_ele_apo_3p_ed1-ed2-0326&utm_content=&partner_id=84407&gclsrc=aw.ds&gad_source=1&gad_campaignid=23600305193&gbraid=0AAAAAD4zZmSby1o0APE_N7o6_0ROsSF6J&gclid=CjwKCAjwuanRBhBSEiwAY5y6V067u8QtZL9zMCz6NW2HA4quMedon6UNfoTpsq_ck7_8DkBR9pqSqRoCL1cQAvD_BwE",
+    id: "pix-lugar-especial",
+    type: "pix",
+    titulo: "Lugar Especial na Lua de Mel",
+    descricao: "Uma contribuicao para conhecermos um cantinho especial na viagem.",
+    valor: "R$ 650",
+    foto: lugarLuaMel,
+    pix,
   },
   {
-    id: 12,
-    titulo: "Forno Elétrico de Embutir",
-    descricao: "Forno elétrico Philco de 46 litros para completar nossa cozinha.",
-    valor: "Presente físico",
-    foto: forno,
-    link: "https://m.magazineluiza.com.br/forno-de-embutir-eletrico-46-litros-philco/p/aaa3a1d2ck/ed/frne/?&seller_id=techshop&utm_source=google&utm_medium=cpc&utm_term=84408&utm_campaign=google_eco_per_ven_pla_ele_sor_3p_ed1-ed2-a-0326&utm_content=&partner_id=84408&gclsrc=aw.ds&gad_source=1&gad_campaignid=23595290313&gbraid=0AAAAAD4zZmTJtTiJlXmOeEfxERomn4na2&gclid=CjwKCAjwuanRBhBSEiwAY5y6VwtDgmgbX3jvDesGowmMN69fllpVtEdV21cZlFONXwOOy0t9D63B2BoCxRIQAvD_BwE",
+    id: "pix-brinde-noivos",
+    type: "pix",
+    titulo: "Brinde dos Noivos",
+    descricao: "Um carinho para celebrarmos essa nova fase com um brinde especial.",
+    valor: "R$ 700",
+    foto: presenteCasal,
+    pix,
   },
 ];
 
-const displayOrder = [1, 9, 2, 3, 10, 4, 5, 11, 6, 7, 12, 8];
-
-export const listGifts = displayOrder.map(
-  (id) => gifts.find((gift) => gift.id === id)!,
-);
+export const physicalGifts: IPhysicalGift[] = [
+  {
+    id: "fisico-forno-embutir-philco",
+    type: "physical",
+    titulo: "Forno de Embutir Elétrico 46 Litros Philco",
+    descricao: "Forno eletrico de embutir Philco, 46 litros, com funcoes de assar, gratinar, grelhar e dourar.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/forno-de-embutir-eletrico-46-litros-philco/techshop/frnphc00042a/6670c77049ffdb0b51233daf710cdffc.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/forno-de-embutir-eletrico-46-litros-philco/p/aaa3a1d2ck/ed/frne/",
+  },
+  {
+    id: "fisico-coifa-oster",
+    type: "physical",
+    titulo: "Coifa de Parede Oster Inox Touch Control 90cm",
+    descricao: "Coifa de parede Oster em inox, 90 cm, com painel touch control e iluminacao em LED.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/coifa-de-parede-oster-inox-touch-control-90cm/osteroficial/12640/885e9fe48f809a0a8d5c8f18a61cadc4.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/coifa-de-parede-oster-inox-touch-control-90cm/p/bae0h6gf74/ed/copa/",
+  },
+  {
+    id: "fisico-cooktop-inducao-eos",
+    type: "physical",
+    titulo: "Cooktop de Indução 5 Bocas EOS 90cm",
+    descricao: "Cooktop de inducao EOS, 90 cm, preto, 9500W, com 5 bocas e painel touch.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/cooktop-de-inducao-cinco-bocas-eos-90cm-preto-9500w-eci05ep-220v/frigelar2/kit8787/2f3ceccf3fb9a916abacefb8a51518b3.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/cooktop-de-inducao-cinco-bocas-eos-90cm-preto-9500w-eci05ep-220v/p/ccd4ace474/ed/ck5b/",
+  },
+  {
+    id: "fisico-panela-brinox-vanilla",
+    type: "physical",
+    titulo: "Jogo de Panelas Brinox Ceramic Life 8 Peças",
+    descricao: "Jogo de panelas antiaderente ceramico Brinox Smart Plus, cor Vanilla, 8 pecas.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/jogo-de-panelas-brinox-antiaderente-ceramic-life-8-pecas-smart-plus-vanilla/mimorada/15906472915/791e2040f3b7111dde885890704bc748.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/jogo-de-panelas-brinox-antiaderente-ceramic-life-8-pecas-smart-plus-vanilla/p/bbe334600a/ud/cjpn/",
+  },
+  {
+    id: "fisico-panela-mimo-style",
+    type: "physical",
+    titulo: "Jogo de Panelas 17 Peças Premium Indução",
+    descricao: "Jogo de panelas Mimo Style com revestimento ceramico antiaderente de 4mm, compativel com inducao.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/jogo-de-panelas-17-pecas-premium-inducao-revestimento-ceramico-antiaderente-4mm-mimo-style/feherosshop/15104909877/d53507b9c2db0e94939a5db135151f4b.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/jogo-de-panelas-17-pecas-premium-inducao-revestimento-ceramico-antiaderente-4mm-mimo-style/p/ag3dc78ead/ud/cjpn/",
+  },
+  {
+    id: "fisico-multiprocessador-philco",
+    type: "physical",
+    titulo: "Multiprocessador Philco 1000W 5 em 1",
+    descricao: "Multiprocessador Philco PMP10A, 1000W, com 5 funcoes para facilitar o preparo das refeicoes.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/multiprocessador-philco-1000w-5-em-1-pmp10a/alecolchoesemoveis/44670a283b4011f0b72642010a480899/92fe6a570e355038d81db57b0d3823b5.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/multiprocessador-philco-1000w-5-em-1-pmp10a/p/jech634e5h/ep/prsa/",
+  },
+  {
+    id: "fisico-purificador-electrolux",
+    type: "physical",
+    titulo: "Purificador de Água Electrolux Compacto",
+    descricao: "Purificador Electrolux eletronico, painel digital, bivolt, para agua natural, fria ou gelada.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/purificador-electrolux-eletronico-compacto-efficient-painel-digital-bivolt-cinza-pe11x/electrolux/2002605/182a853ba54e20cd1852627202d325ab.jpg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/purificador-electrolux-eletronico-compacto-efficient-painel-digital-bivolt-cinza-pe11x/p/714958200/ep/papd/",
+  },
+  {
+    id: "fisico-jantar-pomerode",
+    type: "physical",
+    titulo: "Aparelho de Jantar 42 Peças Pomerode",
+    descricao: "Aparelho de jantar Schmidt em porcelana, 42 pecas, para recebermos familia e amigos.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/aparelho-de-jantar-42-pecas-pomerode-schmidt/lojawebcontinentalmarketplace/mkp001359000161/42f8ca42c2c1bea4014c5e021672f069.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/aparelho-de-jantar-42-pecas-pomerode-schmidt/p/aed12bcdb3/ud/apja/",
+  },
+  {
+    id: "fisico-jantar-ryo-maresia",
+    type: "physical",
+    titulo: "Aparelho de Jantar 20 Peças Ryo Maresia",
+    descricao: "Aparelho de jantar Oxford, colecao Ryo Maresia, 20 pecas, em porcelana.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/aparelho-de-jantar-20-pecas-ryo-maresia-oxford/lojawebcontinentalmarketplace/mkp001359002291/eaf0d252b9c1e772db082e693d9cc5a7.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/aparelho-de-jantar-20-pecas-ryo-maresia-oxford/p/gb789h5ebh/ud/apja/",
+  },
+  {
+    id: "fisico-faqueiro-pisa",
+    type: "physical",
+    titulo: "Faqueiro 30 Peças Aço Inox Pisa Wolff",
+    descricao: "Faqueiro Wolff Pisa em aco inox, 30 pecas, para ate 6 pessoas.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/faqueiro-30-pecas-aco-inox-pisa-wolff-rojemac/fekibeststore/p7625/38c9cc4f4a4574c82dc31af5029ca2db.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/faqueiro-30-pecas-aco-inox-pisa-wolff-rojemac/p/bg21746h43/ud/faqu/",
+  },
+  {
+    id: "fisico-faqueiro-viena",
+    type: "physical",
+    titulo: "Faqueiro Viena 54 Peças em Inox Wolff",
+    descricao: "Faqueiro Wolff Viena em inox, conjunto completo com 54 pecas.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/faqueiro-viena-com-54-pecas-em-inox-wolff/lojawebcontinentalmarketplace/mkp005045000370/9aded365feefdc3715c589c3688ac5c4.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/faqueiro-viena-com-54-pecas-em-inox-wolff/p/cd4a5760ag/ud/faqu/",
+  },
+  {
+    id: "fisico-tacas-pearl",
+    type: "physical",
+    titulo: "Jogo de 12 Taças de Sobremesa Cristal Pearl",
+    descricao: "Taças de sobremesa Wolff em cristal, detalhes de bolinhas peroladas, 200ml, kit com 12 unidades.",
+    valor: "Presente fisico",
+    foto: "https://a-static.mlcdn.com.br/470x352/jogo-12-taca-de-sobremesa-cristal-pearl-bolinha-wolff-200ml/lojawebcontinentalmarketplace/mkp005643010574/f13fc7d8a05dab48bf2d88f552324a61.jpeg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/jogo-12-taca-de-sobremesa-cristal-pearl-bolinha-wolff-200ml/p/ah4255608c/ud/tcsb/",
+  },
+];

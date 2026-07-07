@@ -52,7 +52,7 @@ const details = [
   {
     label: "Local",
     value: "A galeria",
-    sub: "Rua 8 , Grajaú, cep : 35502-341 Divinópolis Mg",
+    sub: "Rua 8, Grajaú, CEP : 35502-341 Divinópolis MG",
     icon: (
       <svg
         viewBox="0 0 40 40"
@@ -146,7 +146,7 @@ export default function EventDetails() {
                 src="/images/galeriaimagem.jpg"
                 alt="A galeria"
                 fill
-                className="object-contain p-10 sm:p-12"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

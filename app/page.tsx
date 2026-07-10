@@ -29,9 +29,7 @@ export default function Home() {
         <OurStory />
       </Reveal>
       <WaveDivider fromColor="#fff" toColor="#E2d3ad" />
-      <Reveal variant="soft" delay={100}>
-        <EventDetails />
-      </Reveal>
+      <EventDetails />
       {/*  <WaveDivider fromColor="#E2d3ad" toColor="#fff" />
       <Reception /> */}
       <Reveal delay={80}>

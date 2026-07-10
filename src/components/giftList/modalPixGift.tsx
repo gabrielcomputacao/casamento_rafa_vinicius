@@ -53,7 +53,7 @@ export function Modal({
       setSuccess(true);
       onGiftReserved?.(presente.id);
     } catch {
-      setError("Este presente pode ter acabado de ser escolhido. Atualize a pagina e tente outro item.");
+      setError("Este presente pode ter acabado de ser escolhido. Atualize a página e tente outro item.");
     } finally {
       setIsSaving(false);
     }
@@ -101,8 +101,8 @@ export function Modal({
               </p>
               <p>Rafaela Amaral Silva</p>
               <p>CPF: 118.245.156-00 / RG: MG 19.155997</p>
-              <p>Rua Mato Grosso, numero 1435, ap 404</p>
-              <p>Divinopolis - MG</p>
+              <p>Rua Mato Grosso, número 1435, ap 404</p>
+              <p>Divinópolis - MG</p>
             </div>
 
             {!success ? (
@@ -162,7 +162,7 @@ export function Modal({
 
             <div className="flex items-center gap-3 mb-5">
               <span className="flex-1 h-px bg-stone-100" />
-              <span className="text-xs text-stone-300">ou copie o numero</span>
+              <span className="text-xs text-stone-300">ou copie o número</span>
               <span className="flex-1 h-px bg-stone-100" />
             </div>
 
@@ -180,7 +180,7 @@ export function Modal({
                   : "border-stone-300 text-stone-600 hover:bg-stone-800 hover:text-white hover:border-stone-800"
               }`}
             >
-              {copiado ? "Copiado" : "Copiar numero PIX"}
+              {copiado ? "Copiado" : "Copiar número PIX"}
             </button>
           </>
         )}

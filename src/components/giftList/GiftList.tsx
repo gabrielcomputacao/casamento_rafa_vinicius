@@ -75,7 +75,7 @@ export default function GifList() {
               Presenteando <span className="text-married-main">momentos</span>
             </h2>
             <p className="mt-4 text-center text-married-four font-light font-casamento-relaway text-lg">
-              Sua presenca e o nosso maior presente, mas separamos algumas experiencias para quem desejar nos presentear via PIX.
+              Sua presença é o nosso maior presente, mas separamos algumas experiências para quem desejar nos presentear via PIX.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ function GiftCard({
         {isReserved && (
           <div className="absolute inset-0 flex items-center justify-center bg-white/55">
             <span className="bg-white px-4 py-2 text-xs tracking-[0.2em] uppercase text-married-four border border-married-second">
-              ja escolhido
+              já escolhido
             </span>
           </div>
         )}
@@ -195,7 +195,7 @@ function GiftCard({
             {gift.valor}
           </span>
         </div>
-        <p className="text-sm font-light leading-relaxed text-married-four/75 font-casamento-relaway">
+        <p className="text-sm font-light leading-relaxed text-married-four/75 font-casamento-relaway pb-4">
           {gift.descricao}
         </p>
         <button
@@ -204,7 +204,7 @@ function GiftCard({
           className="cursor-pointer font-casamento-relaway mt-auto w-full py-2.5 text-xs tracking-[0.2em] uppercase border border-stone-200 text-married-four hover:bg-married-four hover:text-white hover:border-married-bg-married-four transition-all duration-300 disabled:cursor-not-allowed disabled:bg-stone-100 disabled:text-stone-400 disabled:hover:bg-stone-100 disabled:hover:text-stone-400"
         >
           {isReserved
-            ? "Presente ja escolhido"
+            ? "Presente já escolhido"
             : gift.type === "physical"
               ? "Vou presentear"
               : "Presentear via PIX"}

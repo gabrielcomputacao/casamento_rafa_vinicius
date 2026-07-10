@@ -7,7 +7,7 @@ const details = [
   {
     label: "Horário",
     value: "19h00",
-    sub: "Ínicio da festa",
+    sub: "Início da festa",
     icon: (
       <svg
         viewBox="0 0 40 40"

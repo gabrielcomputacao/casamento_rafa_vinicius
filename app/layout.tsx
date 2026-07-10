@@ -5,6 +5,7 @@ import {
   Playfair_Display,
   DM_Sans,
   Raleway,
+  Parisienne,
 } from "next/font/google";
 import "./globals.css";
 import "./custom.css";
@@ -39,6 +40,12 @@ const relaway = Raleway({
   variable: "--font-relaway",
 });
 
+const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-parisienne",
+});
+
 export const metadata: Metadata = {
   title: "Casamento Rafaela e Vinicius",
   description: "Grande celebração do casamento de Rafaela e Vinicius",
@@ -64,7 +71,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${inter.variable} ${cormorant.variable} ${playfair.variable} ${dmSans.variable} ${relaway.variable} antialiased`}
+        className={`${inter.variable} ${cormorant.variable} ${playfair.variable} ${dmSans.variable} ${relaway.variable} ${parisienne.variable} antialiased`}
       >
         <Header />
         {children}

@@ -31,8 +31,12 @@ export default function HeroSection({ type, src, noiva, noivo }: HeroProps) {
       {/* Overlay Escuro (Opcional - ajuda na leitura se tiver texto por cima) */}
       <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
         {noiva && noivo && (
-          <h1 className="text-white text-4xl md:text-6xl  text-center px-4 drop-shadow-lg font-casamento-play">
-            {noiva} <br /> & <br /> {noivo}
+          <h1 className="text-white text-6xl md:text-8xl text-center px-4 drop-shadow-lg font-casamento-peristiwa leading-tight">
+            {noiva}
+            <br />
+            <span className="text-4xl md:text-6xl font-casamento-parisienne">&</span>
+            <br />
+            {noivo}
           </h1>
         )}
       </div>

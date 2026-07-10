@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Peristiwa";
+  src: url("/fonts/peristiwa-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +25,8 @@ html {
   --font-casamento-play: var(--font-playfair);
   --font-casamento-dm: var(--font-dm);
   --font-casamento-relaway: var(--font-relaway);
+  --font-casamento-parisienne: var(--font-parisienne);
+  --font-casamento-peristiwa: "Peristiwa", cursive;
 
 }
 

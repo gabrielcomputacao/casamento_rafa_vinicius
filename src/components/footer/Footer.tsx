@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import monograma from "../../../public/images/monograma-transparente.png";
 
 export function Footer() {
   return (
@@ -6,13 +8,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-full flex justify-center sm:justify-between flex-wrap gap-12 mb-12">
           <div className="flex flex-col items-center md:items-start ">
-            <Link
-              href="/"
-              className="text-4xl font-bold text-married-light mb-4 font-casamento-cormorant "
-            >
-              Rafaela{" "}
-              <span className="text-married-four font-casamento-play">&</span>{" "}
-              Vinicius
+            <Link href="/" className="mb-4">
+              <Image
+                src={monograma}
+                alt="Monograma de Rafaela e Vinicius"
+                width={54}
+                height={46}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
             </Link>
            {/*  <p className="text-married-light font-medium tracking-widest text-sm uppercase ">
               #RafaelaEVinicius2026

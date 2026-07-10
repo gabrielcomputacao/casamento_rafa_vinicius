@@ -31,10 +31,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="shrink-0 z-50">
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-3xl font-bold text-married-three font-casamento-cormorant"
-            >
+            <Link href="/" className="flex items-center">
               <Image
                 src={monograma}
                 alt="Monograma de Rafaela e Vinicius"
@@ -43,9 +40,6 @@ export function Header() {
                 className="h-12 w-auto object-contain"
                 priority
               />
-              <span className="hidden lg:inline">
-                Rafaela <span className="text-married-four font-casamento-play">&</span> Vinicius
-              </span>
             </Link>
           </div>
 

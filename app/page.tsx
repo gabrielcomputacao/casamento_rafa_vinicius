@@ -1,4 +1,5 @@
 import ConfirmGuests from "@/src/components/confirmGuest/ConfirmGuests";
+import CoupleGallery from "@/src/components/coupleGallery/CoupleGallery";
 import Countdown from "@/src/components/countdown/Countdown";
 import EventDetails from "@/src/components/eventDetails/EventDetails";
 import Reception from "@/src/components/eventDetailsReception/EventDetails";
@@ -28,7 +29,11 @@ export default function Home() {
       <Reveal delay={80}>
         <OurStory />
       </Reveal>
-      <WaveDivider fromColor="#fff" toColor="#E2d3ad" />
+      <WaveDivider fromColor="#fff" toColor="#FCF9F1" />
+      <Reveal delay={80}>
+        <CoupleGallery />
+      </Reveal>
+      <WaveDivider fromColor="#FCF9F1" toColor="#E2d3ad" />
       <EventDetails />
       {/*  <WaveDivider fromColor="#E2d3ad" toColor="#fff" />
       <Reception /> */}

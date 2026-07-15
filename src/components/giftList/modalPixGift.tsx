@@ -3,9 +3,10 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { saveGiftReservation } from "@/app/actions/gifts";
 import { IGift } from "./ListGifts";
-import pixQrCode from "../../../public/images/qrcoderafapix-cropped.jpeg";
+import pixQrCode from "../../../public/images/qrcoderafapixnovo-cropped.jpeg";
 
-const PIX_PHONE = "37991991598";
+const PIX_PHONE =
+  "00020126360014br.gov.bcb.pix0114+55379919915985204000053039865802BR5923RAFAELA_AMARAL_DA_SILVA6005Moema610935604-00062290525A4LN261781111784046517539630414CD";
 
 export function Modal({
   presente,
@@ -166,8 +167,8 @@ export function Modal({
               <span className="flex-1 h-px bg-stone-100" />
             </div>
 
-            <div className="bg-stone-50 px-4 py-3 rounded-lg mb-4 text-center">
-              <p className="text-sm text-stone-500 font-light leading-relaxed select-all">
+            <div className="bg-stone-50 px-4 py-3 rounded-lg mb-4 text-center overflow-hidden">
+              <p className="text-sm text-stone-500 font-light leading-relaxed select-all break-all">
                 {PIX_PHONE}
               </p>
             </div>

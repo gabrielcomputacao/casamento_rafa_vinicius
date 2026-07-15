@@ -37,7 +37,7 @@ export interface IPhysicalGift extends IBaseGift {
 export type IGift = IPixGift | IPhysicalGift;
 
 const pix =
-  "00020126360014BR.GOV.BCB.PIX0114+55319937799215204000053039865802BR5925Gabriel Henrique da Silve6009SAO PAULO62140510hS9oI54x3k630412A6";
+  "00020126360014br.gov.bcb.pix0114+55379919915985204000053039865802BR5923RAFAELA_AMARAL_DA_SILVA6005Moema610935604-00062290525A4LN261781111784046517539630414CD";
 
 export const pixGifts: IPixGift[] = [
   {
@@ -146,6 +146,42 @@ export const pixGifts: IPixGift[] = [
     descricao: "Um carinho para celebrarmos essa nova fase com um brinde especial.",
     valor: "R$ 700",
     foto: presenteCasal,
+    pix,
+  },
+  {
+    id: "pix-docinho",
+    type: "pix",
+    titulo: "Um Docinho Especial",
+    descricao: "Uma lembrancinha doce para adoçar esse novo capítulo da nossa vida.",
+    valor: "R$ 15",
+    foto: "https://images.unsplash.com/photo-1558326567-98ae2405596b?fm=jpg&q=80&w=900&auto=format&fit=crop",
+    pix,
+  },
+  {
+    id: "pix-cafe-a-dois",
+    type: "pix",
+    titulo: "Um Café a Dois",
+    descricao: "Um convite para tomarmos um café com calma, só nós dois.",
+    valor: "R$ 30",
+    foto: "https://images.unsplash.com/photo-1635956541203-4625130f761f?fm=jpg&q=80&w=900&auto=format&fit=crop",
+    pix,
+  },
+  {
+    id: "pix-vela-lar",
+    type: "pix",
+    titulo: "Uma Vela para o Nosso Lar",
+    descricao: "Um clima aconchegante para as noites em nossa nova casa.",
+    valor: "R$ 50",
+    foto: "https://images.unsplash.com/photo-1779439525540-72eafbeed250?fm=jpg&q=80&w=900&auto=format&fit=crop",
+    pix,
+  },
+  {
+    id: "pix-flores-cantinho",
+    type: "pix",
+    titulo: "Flores para o Nosso Cantinho",
+    descricao: "Um arranjo simples para deixar nosso novo lar mais florido.",
+    valor: "R$ 70",
+    foto: "https://images.unsplash.com/photo-1763908161582-50ef781f19ee?fm=jpg&q=80&w=900&auto=format&fit=crop",
     pix,
   },
 ];

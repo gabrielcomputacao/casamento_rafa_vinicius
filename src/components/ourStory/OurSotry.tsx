@@ -1,4 +1,5 @@
 import Image from "next/image";
+import casalFoto from "../../../public/images/casal/rafacasal10.jpeg";
 
 export default function OurStory() {
   return (
@@ -33,22 +34,20 @@ export default function OurStory() {
             que amamos.
           </p>
         </div>
-
-        <p className="mt-14 text-base tracking-[0.25em] uppercase text-married-four text-center lg:text-right w-full font-casamento-dm">
-          Juntos desde 2020
-        </p>
       </div>
 
-      <div className="relative min-h-[40vh] lg:min-h-0">
-        <Image
-          src=""
-          alt="Foto do casal"
-          fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority
-        />
-        <div className="absolute inset-y-0 left-0 w-16 bg-linear-to-r from-white to-transparent" />
+      <div className="flex items-center justify-center px-10 py-10 lg:py-16 lg:px-12 bg-white">
+        <div className="relative w-full max-w-md lg:max-w-sm xl:max-w-md">
+          <div className="hidden lg:block absolute -inset-6 rounded-[2.5rem] border border-married-main/60" />
+          <div className="hidden lg:block absolute -inset-3 rounded-[2rem] border border-married-three/35" />
+          <Image
+            src={casalFoto}
+            alt="Foto do casal"
+            className="relative w-full h-auto rounded-2xl lg:rounded-[1.5rem] shadow-md lg:shadow-[0_30px_70px_-25px_rgba(149,129,90,0.45)]"
+            sizes="(max-width: 1024px) 100vw, 480px"
+            priority
+          />
+        </div>
       </div>
     </section>
   );

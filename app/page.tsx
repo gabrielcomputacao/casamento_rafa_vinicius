@@ -3,7 +3,7 @@ import CoupleGallery from "@/src/components/coupleGallery/CoupleGallery";
 import Countdown from "@/src/components/countdown/Countdown";
 import EventDetails from "@/src/components/eventDetails/EventDetails";
 import Reception from "@/src/components/eventDetailsReception/EventDetails";
-import GifList from "@/src/components/giftList/GiftList";
+import GifList from "@/src/components/giftList/GiftListMobileAlt";
 import HeroSection from "@/src/components/hero/Hero";
 import Highlights from "@/src/components/highLights/HighLights";
 import MessageCouple from "@/src/components/messageCouple/MessageCouple";

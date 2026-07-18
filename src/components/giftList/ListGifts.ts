@@ -117,7 +117,7 @@ export const pixGifts: IPixGift[] = [
     type: "pix",
     titulo: "Café da Manhã Especial",
     descricao: "Um momento leve e gostoso para aproveitarmos juntos depois do casamento.",
-    valor: "R$ 800",
+    valor: "R$ 250",
     foto: vinhosQueijo,
     pix,
   },

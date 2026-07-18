@@ -17,8 +17,8 @@ export default function Home() {
     <div className="w-full h-full">
       <RiceRain />
       <HeroSection
-        src="/images/fundocasamento.jpg"
-        type="image"
+        src="/videos/videocasalrafa.mp4"
+        type="video"
         noiva="Rafaela"
         noivo="Vinicius"
       />

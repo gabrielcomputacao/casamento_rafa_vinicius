@@ -5,33 +5,33 @@ function CalendarCard({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
       {/* calendário */}
-      <div className="w-24 md:w-32 bg-white shadow-sm overflow-hidden" >
+      <div className="w-14 sm:w-24 md:w-32 bg-white shadow-sm overflow-hidden" >
 
         {/* topo do calendário — argolas + cor */}
-        <div className="relative flex items-center justify-center py-2 bg-married-three">
+        <div className="relative flex items-center justify-center py-1 sm:py-2 bg-married-three">
           {/* argolas */}
-          <div className="absolute -top-1 left-1/2 -translate-x-1/2 flex gap-5">
-            <div className="w-2 h-3 rounded-b-full bg-white/60 border border-white/40" />
-            <div className="w-2 h-3 rounded-b-full bg-white/60 border border-white/40" />
+          <div className="absolute -top-1 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-5">
+            <div className="w-1.5 h-2 sm:w-2 sm:h-3 rounded-b-full bg-white/60 border border-white/40" />
+            <div className="w-1.5 h-2 sm:w-2 sm:h-3 rounded-b-full bg-white/60 border border-white/40" />
           </div>
-          <span className="text-white/90 text-xs tracking-[0.2em] uppercase font-casamento-relaway pt-1">
+          <span className="text-white/90 text-[8px] sm:text-xs tracking-[0.1em] sm:tracking-[0.2em] uppercase font-casamento-relaway pt-1">
             {label}
           </span>
         </div>
 
         {/* número */}
-        <div className="flex items-center justify-center py-4 md:py-6">
-          <span className="text-4xl md:text-5xl font-light font-casamento-inter text-married-four" >
+        <div className="flex items-center justify-center py-2 sm:py-4 md:py-6">
+          <span className="text-2xl sm:text-4xl md:text-5xl font-light font-casamento-inter text-married-four" >
             {String(value).padStart(2, '0')}
           </span>
         </div>
 
         {/* grade decorativa de dias */}
-        <div className="px-3 pb-3 grid grid-cols-7 gap-0.5">
+        <div className="px-1.5 sm:px-3 pb-1.5 sm:pb-3 grid grid-cols-7 gap-0.5">
           {Array.from({ length: 21 }).map((_, i) => (
             <div
               key={i}
-              className="h-1.5 w-full rounded-sm"
+              className="h-1 sm:h-1.5 w-full rounded-sm"
               style={{ backgroundColor: i % 7 === 0 ? "#95815a" : "#F5F5F5" }}
             />
           ))}
@@ -74,7 +74,7 @@ export default function Countdown() {
 
   return (
     <section className="py-12 md:py-1 md:pt-10 bg-married-second" >
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
 
       
        {/*  <div className="mb-12">
@@ -91,19 +91,19 @@ export default function Countdown() {
         </div> */}
 
         {/* cards */}
-        <div className="flex justify-center gap-1 md:gap-8">
+        <div className="flex justify-center gap-1.5 sm:gap-3 md:gap-8">
           {timeUnits.map((unit) => (
             <CalendarCard key={unit.label} value={unit.value} label={unit.label} />
           ))}
         </div>
 
         {/* data */}
-        <div className="mt-12 flex items-center justify-center gap-4">
-          <span className="block h-px w-10 bg-married-black"  />
-          <p className="text-lg font-casamento-inter font-medium text-married-four" >
+        <div className="mt-8 sm:mt-12 flex items-center justify-center gap-2 sm:gap-4">
+          <span className="block h-px w-6 sm:w-10 bg-married-black"  />
+          <p className="text-sm sm:text-lg font-casamento-inter font-medium text-married-four" >
             19 de Setembro de 2026
           </p>
-          <span className="block h-px w-10 bg-married-four"  />
+          <span className="block h-px w-6 sm:w-10 bg-married-four"  />
         </div>
 
       </div>

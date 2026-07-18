@@ -17,7 +17,7 @@ export default function HeroSection({ type, src, noiva, noivo }: HeroProps) {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover object-[20%_42%]"
+            className="w-full h-full object-cover object-[50%_35%] md:object-[20%_42%]"
           />
         ) : (
           <img
@@ -28,8 +28,8 @@ export default function HeroSection({ type, src, noiva, noivo }: HeroProps) {
         )}
       </div>
 
-      {/* Overlay Escuro (Opcional - ajuda na leitura se tiver texto por cima) */}
-      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+      {/* Overlay Escuro (ajuda na leitura do texto sobre o vídeo/imagem) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-black/50 flex items-center justify-center">
         {noiva && noivo && (
           <h1 className="text-white text-6xl md:text-8xl text-center px-4 drop-shadow-lg font-casamento-peristiwa leading-tight">
             {noiva}

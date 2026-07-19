@@ -101,7 +101,6 @@ export function Modal({
                 dados para entrega ou retirada
               </p>
               <p>Rafaela Amaral Silva</p>
-              <p>CPF: 118.245.156-00 / RG: MG 19.155997</p>
               <p>Rua Mato Grosso, número 1435, ap 404</p>
               <p>Divinópolis - MG</p>
             </div>

@@ -8,6 +8,7 @@ import HeroSection from "@/src/components/hero/Hero";
 import Highlights from "@/src/components/highLights/HighLights";
 import MessageCouple from "@/src/components/messageCouple/MessageCouple";
 import OurStory from "@/src/components/ourStory/OurSotry";
+import PreWeddingVideo from "@/src/components/preWeddingVideo/PreWeddingVideo";
 import Reveal from "@/src/components/reveal/Reveal";
 import RiceRain from "@/src/components/riceRain/RiceRain";
 import WaveDivider from "@/src/components/waveDivider/WaveDivider";
@@ -42,6 +43,9 @@ export default function Home() {
       </Reveal>
       <Reveal delay={60}>
         <GifList />
+      </Reveal>
+      <Reveal delay={80}>
+        <PreWeddingVideo />
       </Reveal>
       <Reveal delay={80}>
         <MessageCouple />

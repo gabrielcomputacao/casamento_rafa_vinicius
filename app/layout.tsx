@@ -47,8 +47,8 @@ const parisienne = Parisienne({
 });
 
 export const metadata: Metadata = {
-  title: "Casamento Rafaela e Vinicius",
-  description: "Grande celebração do casamento de Rafaela e Vinicius",
+  title: "Casamento Rafaela e Vinícius",
+  description: "Grande celebração do casamento de Rafaela e Vinícius",
   icons: {
     icon: [
       { url: "/icons/favicon.ico", sizes: "any" },

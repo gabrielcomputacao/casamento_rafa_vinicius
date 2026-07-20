@@ -34,7 +34,7 @@ export function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 src={monograma}
-                alt="Monograma de Rafaela e Vinicius"
+                alt="Monograma de Rafaela e Vinícius"
                 width={54}
                 height={46}
                 className="h-12 w-auto object-contain"

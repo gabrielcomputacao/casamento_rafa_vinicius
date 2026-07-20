@@ -7,15 +7,15 @@ const AUTOPLAY_MS = 4200;
 const SLIDE_TRANSITION = "1300ms cubic-bezier(0.16,1,0.3,1)";
 
 const photos = [
-  { src: "/images/casal/rafacasal1.jpeg", alt: "Rafaela e Vinicius, momento 1" },
-  { src: "/images/casal/rafacasal2.jpeg", alt: "Rafaela e Vinicius, momento 2" },
-  { src: "/images/casal/rafacasal3.jpeg", alt: "Rafaela e Vinicius, momento 3" },
-  { src: "/images/casal/rafacasal4.jpeg", alt: "Rafaela e Vinicius, momento 4" },
-  { src: "/images/casal/rafacasal5.jpeg", alt: "Rafaela e Vinicius, momento 5" },
-  { src: "/images/casal/rafacasal6.jpeg", alt: "Rafaela e Vinicius, momento 6" },
-  { src: "/images/casal/rafacasal7.jpeg", alt: "Rafaela e Vinicius, momento 7" },
-  { src: "/images/casal/rafacasal8.jpeg", alt: "Rafaela e Vinicius, momento 8" },
-  { src: "/images/casal/rafacasal9.jpeg", alt: "Rafaela e Vinicius, momento 9" },
+  { src: "/images/casal/rafacasal1.jpeg", alt: "Rafaela e Vinícius, momento 1" },
+  { src: "/images/casal/rafacasal2.jpeg", alt: "Rafaela e Vinícius, momento 2" },
+  { src: "/images/casal/rafacasal3.jpeg", alt: "Rafaela e Vinícius, momento 3" },
+  { src: "/images/casal/rafacasal4.jpeg", alt: "Rafaela e Vinícius, momento 4" },
+  { src: "/images/casal/rafacasal5.jpeg", alt: "Rafaela e Vinícius, momento 5" },
+  { src: "/images/casal/rafacasal6.jpeg", alt: "Rafaela e Vinícius, momento 6" },
+  { src: "/images/casal/rafacasal7.jpeg", alt: "Rafaela e Vinícius, momento 7" },
+  { src: "/images/casal/rafacasal8.jpeg", alt: "Rafaela e Vinícius, momento 8" },
+  { src: "/images/casal/rafacasal9.jpeg", alt: "Rafaela e Vinícius, momento 9" },
 ];
 
 export default function CoupleGallery() {

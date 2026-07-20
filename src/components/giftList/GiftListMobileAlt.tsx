@@ -94,7 +94,7 @@ export default function GifListMobileAlt() {
               um presente simbólico via PIX ou um presente físico da nossa lista — qualquer uma das
               duas formas, escolhida com carinho, vai ficar guardada com a gente para sempre.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="#physical-gifts"
                 onClick={(event) => {
@@ -105,10 +105,20 @@ export default function GifListMobileAlt() {
               >
                 Ver presentes físicos
               </a>
+              <a
+                href="#pix-gifts"
+                onClick={(event) => {
+                  event.preventDefault();
+                  scrollTo("pix-gifts");
+                }}
+                className="inline-block cursor-pointer font-casamento-relaway text-xs tracking-[0.25em] uppercase px-10 py-4 border border-married-three bg-married-three text-white hover:bg-transparent hover:text-married-three transition-all duration-500"
+              >
+                Ver presentes via PIX
+              </a>
             </div>
           </div>
 
-          <div className="mb-10 sm:mb-16">
+          <div id="pix-gifts" className="mb-10 sm:mb-16">
             <h2 className="italic text-3xl sm:text-4xl lg:text-5xl font-light text-married-three leading-tight font-casamento-cormorant text-center">
               Presenteando <span className="text-married-main">momentos</span>
             </h2>

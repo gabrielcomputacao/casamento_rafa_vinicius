@@ -140,7 +140,7 @@ export function Modal({
             ) : (
               <div className="text-center border border-married-main rounded-lg p-5">
                 <p className="text-sm text-stone-600">
-                  Presente confirmado. Obrigado por avisar a Rafaela e o Vinicius.
+                  Presente confirmado. Obrigado por avisar a Rafaela e o Vinícius.
                 </p>
               </div>
             )}

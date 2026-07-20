@@ -13,15 +13,18 @@ import Reveal from "@/src/components/reveal/Reveal";
 import RiceRain from "@/src/components/riceRain/RiceRain";
 import WaveDivider from "@/src/components/waveDivider/WaveDivider";
 
+// Toggle to re-enable the falling rice animation. Currently disabled per request.
+const RICE_RAIN_ENABLED = false;
+
 export default function Home() {
   return (
     <div className="w-full h-full">
-      <RiceRain />
+      {RICE_RAIN_ENABLED && <RiceRain />}
       <HeroSection
         src="/videos/videocasalrafa.mp4"
         type="video"
         noiva="Rafaela"
-        noivo="Vinicius"
+        noivo="Vinícius"
       />
       <Reveal>
         <Countdown />

@@ -11,7 +11,7 @@ export function Footer() {
             <Link href="/" className="mb-4">
               <Image
                 src={monograma}
-                alt="Monograma de Rafaela e Vinicius"
+                alt="Monograma de Rafaela e Vinícius"
                 width={54}
                 height={46}
                 className="h-14 w-auto object-contain brightness-0 invert"

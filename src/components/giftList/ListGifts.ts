@@ -6,6 +6,13 @@ import hospedagem from "../../../public/images/hospedagem-lua-de-mel.png";
 import passeio from "../../../public/images/passeio-lua-de-mel.png";
 import mudanca from "../../../public/images/mudanca-novo-lar.png";
 import vinhosQueijo from "../../../public/images/vinhosqueijo.jpg";
+import grillPhilco from "../../../public/images/grill-philco.png";
+import grillMondial from "../../../public/images/grill-mondial.png";
+import kitCadenceCozinha from "../../../public/images/kit-cadence-cozinha.png";
+import jogoJantarPearl from "../../../public/images/jogo-jantar-pearl.png";
+import pratoBoloCoracao from "../../../public/images/prato-bolo-coracao.png";
+import rechaudOvalDynasty from "../../../public/images/rechaud-oval-dynasty.png";
+import wolffXicarasPearl from "../../../public/images/wolff-xicaras-pearl.png";
 
 export type GiftImageSource = StaticImageData | string;
 
@@ -416,5 +423,75 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://product-hub-prd.madeiramadeira.com.br/654902589/images/5bc4e3d6-070b-4c9e-b4db-fe9dc1e6eef8e42a799288d4c55af560277980.jpg?width=600&canvas=1:1&bg-color=FFF",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/kit-2-lixeiras-automaticas-inteligentes-12l-sensor-infravermelho-branco-uzy-shop-comercial/p/ak7d1dg7hc/ci/lixi/",
+  },
+  {
+    id: "fisico-grill-philco-pgr21pi",
+    type: "physical",
+    titulo: "Grill Philco PGR21PI Maxx Clean 2 em 1",
+    descricao: "Grill e sanduicheira Philco, retangular, 1000W, antiaderente, com coletor de gordura.",
+    valor: "Presente físico",
+    foto: grillPhilco,
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/grill-philco-pgr21pi-maxx-clean-2-em-1-retangular-1000w-antiaderente-com-coletor-de-gordura/p/236589900/ep/epgr/",
+  },
+  {
+    id: "fisico-grill-mondial-g03",
+    type: "physical",
+    titulo: "Grill Mondial G-03 Redondo 1270W",
+    descricao: "Grill redondo Mondial Cook & Grill, 1270W, antiaderente, ideal para pizzas e lanches.",
+    valor: "Presente físico",
+    foto: grillMondial,
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/grill-mondial-g-03-redondo-1270w-antiaderente/p/236676600/ep/epgr/",
+  },
+  {
+    id: "fisico-kit-cadence-cozinha-ideal",
+    type: "physical",
+    titulo: "Kit Cadence Cozinha Completa Ideal 110V",
+    descricao: "Kit Cadence com cafeteira, mixer, liquidificador portátil e chaleira elétrica para o dia a dia na cozinha.",
+    valor: "Presente físico",
+    foto: kitCadenceCozinha,
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/kit-cadence-cozinha-completa-ideal-110v/p/gfb26df9d6/ep/elkp/",
+  },
+  {
+    id: "fisico-jogo-jantar-pearl-wolff",
+    type: "physical",
+    titulo: "Jogo de Jantar 20 Peças Pearl Cristal Wolff",
+    descricao: "Jogo de jantar Wolff em cristal, linha Pearl com detalhes perolados, 20 peças para servir com elegância.",
+    valor: "Presente físico",
+    foto: jogoJantarPearl,
+    storeName: "WolyCasa",
+    link: "https://www.wolycasa.com.br/products/jogo-de-jantar-20-pecas-pearl-cristal-wolff",
+  },
+  {
+    id: "fisico-prato-bolo-coracao-lyor",
+    type: "physical",
+    titulo: "Prato para Bolo com Pé e Tampa Coração Cristal",
+    descricao: "Prato para bolo Lyor em cristal, com pé, tampa em formato de coração, 25,5cm x 29cm.",
+    valor: "Presente físico",
+    foto: pratoBoloCoracao,
+    storeName: "WolyCasa",
+    link: "https://www.wolycasa.com.br/products/prato-para-bolo-com-pe-e-tampa-coracao-25-5cm-x-29cm-cristal-lyor",
+  },
+  {
+    id: "fisico-rechaud-oval-dynasty",
+    type: "physical",
+    titulo: "Rechaud Oval em Porcelana com Queimador 2,3L",
+    descricao: "Rechaud oval Dynasty em porcelana, com queimador de 2,3L, ideal para manter pratos aquecidos à mesa.",
+    valor: "Presente físico",
+    foto: rechaudOvalDynasty,
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/rechaud-oval-em-porcelana-com-queimador-23l-dynasty/p/gchd5hbd8e/ud/rech/",
+  },
+  {
+    id: "fisico-wolff-xicaras-prato-doce",
+    type: "physical",
+    titulo: "Wolff 4 Xícaras, Prato Doce, Manteigueira e Açucareiro",
+    descricao: "Conjunto Wolff em cristal, linha Pearl, com 4 xícaras, prato para doce, manteigueira e açucareiro.",
+    valor: "Presente físico",
+    foto: wolffXicarasPearl,
+    storeName: "Mercado Livre",
+    link: "https://www.mercadolivre.com.br/wolff--4-xicaras--prato-doce--mantegueira--acucareiro/up/MLBU3383974968",
   },
 ];

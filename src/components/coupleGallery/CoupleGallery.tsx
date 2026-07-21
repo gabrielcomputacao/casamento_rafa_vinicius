@@ -16,6 +16,14 @@ const photos = [
   { src: "/images/casal/rafacasal7.jpeg", alt: "Rafaela e Vinícius, momento 7" },
   { src: "/images/casal/rafacasal8.jpeg", alt: "Rafaela e Vinícius, momento 8" },
   { src: "/images/casal/rafacasal9.jpeg", alt: "Rafaela e Vinícius, momento 9" },
+  { src: "/images/casal/rafacasal10.jpeg", alt: "Rafaela e Vinícius, momento 10" },
+  { src: "/images/casal/rafacasal11.jpeg", alt: "Rafaela e Vinícius, momento 11" },
+  { src: "/images/casal/rafacasal12.jpeg", alt: "Rafaela e Vinícius, momento 12" },
+  { src: "/images/casal/rafacasal13.jpeg", alt: "Rafaela e Vinícius, momento 13" },
+  { src: "/images/casal/rafacasal14.jpeg", alt: "Rafaela e Vinícius, momento 14" },
+  { src: "/images/casal/rafacasal15.jpeg", alt: "Rafaela e Vinícius, momento 15" },
+  { src: "/images/casal/rafacasal16.jpeg", alt: "Rafaela e Vinícius, momento 16" },
+  { src: "/images/casal/rafacasal17.jpeg", alt: "Rafaela e Vinícius, momento 17" },
 ];
 
 export default function CoupleGallery() {

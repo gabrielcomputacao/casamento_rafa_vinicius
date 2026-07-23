@@ -60,6 +60,14 @@ export default function ConvidadosClient() {
           </p>
         </div>
 
+        {/* aviso de prazo */}
+        <div className="text-center mb-14 px-2">
+          <p className="italic text-2xl sm:text-3xl lg:text-4xl font-light font-casamento-cormorant leading-snug text-married-light">
+            Pedimos, com carinho, que a confirmação de presença seja realizada
+            até o dia <span className=" text-4xl lg:text-5xl">20/08/2026</span> .
+          </p>
+        </div>
+
         {/* card do formulário */}
         <div
           className="bg-white backdrop-blur-sm px-8 py-10 shadow-sm"

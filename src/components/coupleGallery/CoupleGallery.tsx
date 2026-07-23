@@ -22,8 +22,6 @@ const photos = [
   { src: "/images/casal/rafacasal13.jpeg", alt: "Rafaela e Vinícius, momento 13" },
   { src: "/images/casal/rafacasal14.jpeg", alt: "Rafaela e Vinícius, momento 14" },
   { src: "/images/casal/rafacasal15.jpeg", alt: "Rafaela e Vinícius, momento 15" },
-  { src: "/images/casal/rafacasal16.jpeg", alt: "Rafaela e Vinícius, momento 16" },
-  { src: "/images/casal/rafacasal17.jpeg", alt: "Rafaela e Vinícius, momento 17" },
 ];
 
 export default function CoupleGallery() {

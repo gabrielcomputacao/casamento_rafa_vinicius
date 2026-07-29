@@ -154,15 +154,15 @@ export const physicalGifts: IPhysicalGift[] = [
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/coifa-de-parede-oster-inox-touch-control-90cm/p/bae0h6gf74/ed/copa/",
   },
-  {
-    id: "fisico-cooktop-inducao-eos",
+   {
+    id: "fisico-cooktop-eletrico-philco-volcano",
     type: "physical",
-    titulo: "Cooktop de Indução 5 Bocas EOS 90cm",
-    descricao: "Cooktop de indução EOS, 90 cm, preto, 9500W, com 5 bocas e painel touch.",
+    titulo: "Cooktop Elétrico 5 Bocas Philco Volcano 8400W",
+    descricao: "Cooktop elétrico Philco Volcano, vitrocerâmico, 5 bocas, 8400W, com painel touch e timer.",
     valor: "Presente físico",
-    foto: "https://a-static.mlcdn.com.br/470x352/cooktop-de-inducao-cinco-bocas-eos-90cm-preto-9500w-eci05ep-220v/frigelar2/kit8787/2f3ceccf3fb9a916abacefb8a51518b3.jpeg",
+    foto: "https://i.promobit.com.br/static/p/168/542484415816933505857002743548.jpg",
     storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/cooktop-de-inducao-cinco-bocas-eos-90cm-preto-9500w-eci05ep-220v/p/ccd4ace474/ed/ck5b/",
+    link: "https://www.magazineluiza.com.br/cooktop-eletrico-5-bocas-philco-volcano-8400w-pct55vc/p/djd2f2hed1/ed/ck5b/",
   },
   {
     id: "fisico-panela-brinox-vanilla",
@@ -393,16 +393,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://i.promobit.com.br/static/p/168/809600282717290845736318451516.jpg",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/smart-tv-58-4k-uhd-led-philips-58pug7019-78-wi-fi-bluetooth-google-assistente-3-hdmi-2-usb/p/238616500/et/elit/",
-  },
-  {
-    id: "fisico-cooktop-eletrico-philco-volcano",
-    type: "physical",
-    titulo: "Cooktop Elétrico 5 Bocas Philco Volcano 8400W",
-    descricao: "Cooktop elétrico Philco Volcano, vitrocerâmico, 5 bocas, 8400W, com painel touch e timer.",
-    valor: "Presente físico",
-    foto: "https://i.promobit.com.br/static/p/168/542484415816933505857002743548.jpg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/cooktop-eletrico-5-bocas-philco-volcano-8400w-pct55vc/p/djd2f2hed1/ed/ck5b/",
   },
   {
     id: "fisico-cooktop-gas-electrolux-efficient",

@@ -37,7 +37,11 @@ export default function Home() {
       <Reveal delay={80}>
         <CoupleGallery />
       </Reveal>
-      <WaveDivider fromColor="#FCF9F1" toColor="#E2d3ad" />
+      <WaveDivider fromColor="#FCF9F1" toColor="#fff" />
+      <Reveal delay={80}>
+        <PreWeddingVideo />
+      </Reveal>
+      <WaveDivider fromColor="#fff" toColor="#E2d3ad" />
       <EventDetails />
       {/*  <WaveDivider fromColor="#E2d3ad" toColor="#fff" />
       <Reception /> */}
@@ -46,9 +50,6 @@ export default function Home() {
       </Reveal>
       <Reveal delay={60}>
         <GifList />
-      </Reveal>
-      <Reveal delay={80}>
-        <PreWeddingVideo />
       </Reveal>
       <Reveal delay={80}>
         <MessageCouple />

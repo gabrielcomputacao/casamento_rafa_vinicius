@@ -13,6 +13,7 @@ import jogoJantarPearl from "../../../public/images/jogo-jantar-pearl.png";
 import pratoBoloCoracao from "../../../public/images/prato-bolo-coracao.png";
 import rechaudOvalDynasty from "../../../public/images/rechaud-oval-dynasty.png";
 import wolffXicarasPearl from "../../../public/images/wolff-xicaras-pearl.png";
+import moveisNovoLar from "../../../public/images/moveis-novo-lar.png";
 
 export type GiftImageSource = StaticImageData | string;
 
@@ -129,6 +130,15 @@ export const pixGifts: IPixGift[] = [
     descricao: "Uma diária para aproveitarmos a lua de mel com tranquilidade.",
     valor: "R$ 750",
     foto: hospedagem,
+    pix,
+  },
+  {
+    id: "pix-moveis-novo-lar",
+    type: "pix",
+    titulo: "Móveis para o Novo Lar",
+    descricao: "Contribuição para montarmos nossa casa com carinho e conforto.",
+    valor: "R$ 1.000",
+    foto: moveisNovoLar,
     pix,
   },
 ];
@@ -375,16 +385,6 @@ export const physicalGifts: IPhysicalGift[] = [
     link: "https://www.magazineluiza.com.br/conjunto-para-assar-e-servir-inox-3-pecas-tramontina-cosmos-64310114/p/144225500/ud/uccm/",
   },
   {
-    id: "fisico-potes-hermeticos-electrolux-10pc",
-    type: "physical",
-    titulo: "Jogo de Potes de Plástico Hermético Electrolux 10 Peças",
-    descricao: "Jogo de potes herméticos Electrolux com tampa, 10 peças, ideal para organizar e conservar alimentos na geladeira ou freezer.",
-    valor: "Presente físico",
-    foto: "https://i.promobit.com.br/168/726739349815676538441183072759.jpg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/jogo-de-potes-de-plastico-hermetico-electrolux-com-tampa-41029853-10-pecas/p/212738100/ud/poud/",
-  },
-  {
     id: "fisico-smart-tv-58-philips",
     type: "physical",
     titulo: 'Smart TV 58" 4K UHD LED Philips 58PUG7019/78',
@@ -403,16 +403,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://electrolux.vtexassets.com/arquivos/ids/275852-1000-1000?v=638851563816870000&width=1000&height=1000&aspect=true&format=auto",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/cooktop-5-bocas-a-gas-electrolux-mesa-de-vidro-efficient-grade-de-aco-fosco-ke5gr/p/fa8k98k60f/ed/cook/",
-  },
-  {
-    id: "fisico-kit-lixeiras-automaticas-uzy",
-    type: "physical",
-    titulo: "Kit 2 Lixeiras Automáticas Inteligentes 12L",
-    descricao: "Kit com 2 lixeiras automáticas, sensor infravermelho, 12 litros, cor preta, abertura e fechamento sem contato.",
-    valor: "Presente físico",
-    foto: "https://product-hub-prd.madeiramadeira.com.br/654902589/images/5bc4e3d6-070b-4c9e-b4db-fe9dc1e6eef8e42a799288d4c55af560277980.jpg?width=600&canvas=1:1&bg-color=FFF",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/kit-2-lixeiras-automaticas-inteligentes-12l-sensor-infravermelho-branco-uzy-shop-comercial/p/ak7d1dg7hc/ci/lixi/",
   },
   {
     id: "fisico-grill-philco-pgr21pi",
@@ -533,5 +523,25 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://colormaq.vtexassets.com/arquivos/ids/156814-800-800?v=638907115263730000&width=800&height=800&aspect=true",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/tanquinho-de-lavar-roupas-colormaq-15kg-lcs15/p/241479100/ed/tank/",
+  },
+  {
+    id: "fisico-geladeira-brastemp-french-door-559l",
+    type: "physical",
+    titulo: "Geladeira Brastemp Frost Free French Door Inox 559L",
+    descricao: "Geladeira/refrigerador Brastemp French Door, 3 portas, inox, 559 litros, Frost Free, com Xpert Inverter e tecnologia Safe Power.",
+    valor: "Presente físico",
+    foto: "https://brastemp.vtexassets.com/arquivos/ids/284194-800-auto",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/geladeira-refrigerador-brastemp-frost-free-french-door-inox-559l-bro85mkana/p/240941400/ed/refr/",
+  },
+  {
+    id: "fisico-lavadora-alta-pressao-tramontina-1900psi",
+    type: "physical",
+    titulo: "Lavadora de Alta Pressão Tramontina Lava Jato 1900 PSI",
+    descricao: "Lavadora de alta pressão Tramontina, 1800W, 1900 psi, vazão de 420 l/h, amarela, 110V.",
+    valor: "Presente físico",
+    foto: "https://ultramaquinas.fbitsstatic.net/img/p/lavadora-de-alta-pressao-1900-psi-1800w-tramontina-71109/257870.jpg",
+    storeName: "Magazine Luiza",
+    link: "https://www.magazineluiza.com.br/kit-lavadora-alta-pressao-tramontina-lava-jato-1900-psi-1800w-vazao-420-amarelo-110v/p/cg4cge45ec/fj/lprs/",
   },
 ];

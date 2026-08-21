@@ -10,9 +10,7 @@ import grillPhilco from "../../../public/images/grill-philco.png";
 import grillMondial from "../../../public/images/grill-mondial.png";
 import kitCadenceCozinha from "../../../public/images/kit-cadence-cozinha.png";
 import jogoJantarPearl from "../../../public/images/jogo-jantar-pearl.png";
-import pratoBoloCoracao from "../../../public/images/prato-bolo-coracao.png";
 import rechaudOvalDynasty from "../../../public/images/rechaud-oval-dynasty.png";
-import wolffXicarasPearl from "../../../public/images/wolff-xicaras-pearl.png";
 import moveisNovoLar from "../../../public/images/moveis-novo-lar.png";
 
 export type GiftImageSource = StaticImageData | string;
@@ -164,15 +162,15 @@ export const physicalGifts: IPhysicalGift[] = [
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/coifa-de-parede-oster-inox-touch-control-90cm/p/bae0h6gf74/ed/copa/",
   },
-   {
-    id: "fisico-cooktop-eletrico-philco-volcano",
+  {
+    id: "fisico-kit-churrasco-masterchef",
     type: "physical",
-    titulo: "Cooktop Elétrico 5 Bocas Philco Volcano 8400W",
-    descricao: "Cooktop elétrico Philco Volcano, vitrocerâmico, 5 bocas, 8400W, com painel touch e timer.",
+    titulo: "Kit para Churrasco Personalizado com Garra e Faca 7\"",
+    descricao: "Kit para churrasco Woodbull, com tábua de madeira teca, faca em aço inox de 7 polegadas e garra para desfiar carnes, em caixa para presente.",
     valor: "Presente físico",
-    foto: "https://i.promobit.com.br/static/p/168/542484415816933505857002743548.jpg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/cooktop-eletrico-5-bocas-philco-volcano-8400w-pct55vc/p/djd2f2hed1/ed/ck5b/",
+    foto: "https://woodbull.com.br/cdn/shop/files/KIT-CHURRASCO-_KITTACD0020_-1_a1990333-32ed-475a-8fd3-ad33d641d4dd.png?v=1778776376&width=1000",
+    storeName: "Woodbull",
+    link: "https://woodbull.com.br/products/kit-churrasco-personalizado-masterchef",
   },
   {
     id: "fisico-panela-brinox-vanilla",
@@ -185,14 +183,14 @@ export const physicalGifts: IPhysicalGift[] = [
     link: "https://www.magazineluiza.com.br/jogo-de-panelas-brinox-antiaderente-ceramic-life-8-pecas-smart-plus-vanilla/p/bbe334600a/ud/cjpn/",
   },
   {
-    id: "fisico-panela-mimo-style",
+    id: "fisico-kit-banquetas-noah",
     type: "physical",
-    titulo: "Jogo de Panelas 17 Peças Premium Indução",
-    descricao: "Jogo de panelas Mimo Style com revestimento cerâmico antiaderente de 4mm, compatível com indução.",
+    titulo: "Kit 4 Banquetas Cozinha Gourmet Noah Corino Terracota",
+    descricao: "Kit com 4 banquetas para cozinha gourmet, estrutura em madeira cor amêndoa e assento estofado em corino terracota.",
     valor: "Presente físico",
-    foto: "https://a-static.mlcdn.com.br/470x352/jogo-de-panelas-17-pecas-premium-inducao-revestimento-ceramico-antiaderente-4mm-mimo-style/feherosshop/15104909877/d53507b9c2db0e94939a5db135151f4b.jpeg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/jogo-de-panelas-17-pecas-premium-inducao-revestimento-ceramico-antiaderente-4mm-mimo-style/p/ag3dc78ead/ud/cjpn/",
+    foto: "https://images.unsplash.com/photo-1622986339425-7f92e62dab42?fm=jpg&q=80&w=900&auto=format&fit=crop",
+    storeName: "Mercado Livre",
+    link: "https://www.mercadolivre.com.br/kit-4-banqueta-cozinha-gourmet-noah-madeira-amendoa-corino-terracota/p/MLB72991312",
   },
   {
     id: "fisico-multiprocessador-philco",
@@ -215,16 +213,6 @@ export const physicalGifts: IPhysicalGift[] = [
     link: "https://www.magazineluiza.com.br/purificador-electrolux-eletronico-compacto-efficient-painel-digital-bivolt-cinza-pe11x/p/714958200/ep/papd/",
   },
   {
-    id: "fisico-jantar-pomerode",
-    type: "physical",
-    titulo: "Aparelho de Jantar 42 Peças Pomerode",
-    descricao: "Aparelho de jantar Schmidt em porcelana, 42 peças, para recebermos família e amigos.",
-    valor: "Presente físico",
-    foto: "https://a-static.mlcdn.com.br/470x352/aparelho-de-jantar-42-pecas-pomerode-schmidt/lojawebcontinentalmarketplace/mkp001359000161/42f8ca42c2c1bea4014c5e021672f069.jpeg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/aparelho-de-jantar-42-pecas-pomerode-schmidt/p/aed12bcdb3/ud/apja/",
-  },
-  {
     id: "fisico-jantar-ryo-maresia",
     type: "physical",
     titulo: "Aparelho de Jantar 20 Peças Ryo Maresia",
@@ -245,16 +233,6 @@ export const physicalGifts: IPhysicalGift[] = [
     link: "https://www.magazineluiza.com.br/faqueiro-30-pecas-aco-inox-pisa-wolff-rojemac/p/bg21746h43/ud/faqu/",
   },
   {
-    id: "fisico-faqueiro-viena",
-    type: "physical",
-    titulo: "Faqueiro Viena 54 Peças em Inox Wolff",
-    descricao: "Faqueiro Wolff Viena em inox, conjunto completo com 54 peças.",
-    valor: "Presente físico",
-    foto: "https://a-static.mlcdn.com.br/470x352/faqueiro-viena-com-54-pecas-em-inox-wolff/lojawebcontinentalmarketplace/mkp005045000370/9aded365feefdc3715c589c3688ac5c4.jpeg",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/faqueiro-viena-com-54-pecas-em-inox-wolff/p/cd4a5760ag/ud/faqu/",
-  },
-  {
     id: "fisico-tacas-pearl",
     type: "physical",
     titulo: "Jogo de 12 Taças de Sobremesa Cristal Pearl",
@@ -273,16 +251,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://brastemp.vtexassets.com/arquivos/ids/271205-800-auto?v=638997704625270000&width=800&height=auto&aspect=true",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/lavadora-de-roupas-brastemp-14kg-cesto-inox-12-programas-de-lavagem-branca-bwj14abana/p/240738000/ed/lava/",
-  },
-  {
-    id: "fisico-lava-loucas-midea-dwa14s",
-    type: "physical",
-    titulo: "Lava-Louças Midea Cinza 14 Serviços",
-    descricao: "Lava-louças Midea DWA14S, cinza, para até 14 serviços, com 6 programas de lavagem e função adiar início.",
-    valor: "Presente físico",
-    foto: "https://fastshopbr.vtexassets.com/arquivos/ids/5145984/0_8bc18625-34ae-4de2-931a-f00a345bc8d6.jpeg.jpg?v=639181172775100000",
-    storeName: "Magazine Luiza",
-    link: "https://m.magazineluiza.com.br/lava-loucas-midea-cinza-com-14-servicos-06-programas-de-lavagem-e-funcao-adiar-inicio-dwa14s/p/jjc3edc1a7/ed/l14s/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=fastshop2",
   },
   {
     id: "fisico-aspirador-electrolux-stk12",
@@ -343,36 +311,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://spicy.vtexassets.com/arquivos/ids/234514-800-auto?v=638380055721600000&width=800&height=auto&aspect=true",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/kit-jogo-conjunto-6-tacas-de-cristal-para-vinho-drink-bohemia-560ml-xtra-ndi-alta-elegante-resistente-moderna/p/cc466a89gj/ud/taag/",
-  },
-  {
-    id: "fisico-tacas-versalhes-dourada-lehavi",
-    type: "physical",
-    titulo: "Jogo de 6 Taças Vidro Borda Dourada Versalhes 340ml",
-    descricao: "Jogo de taças Lehavi Versalhes, 6 peças, 340ml, em vidro com borda dourada para uma mesa mais sofisticada.",
-    valor: "Presente físico",
-    foto: "https://marbeldistribuidora.com.br/wp-content/uploads/2024/09/7908613102940_1_20240912094126.png",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/jogo-de-6-tacas-vidro-com-borda-dourada-versalhes-340ml-lehavi/p/aj2d862gk0/ud/udta/",
-  },
-  {
-    id: "fisico-copos-altos-versalhes-lehavi",
-    type: "physical",
-    titulo: "Jogo de 6 Copos Altos 420ml Borda Dourada Versalhes",
-    descricao: "Jogo de copos altos Lehavi Versalhes, 6 peças, 420ml, em vidro com borda dourada, ideal para drinks e refrescos.",
-    valor: "Presente físico",
-    foto: "https://cdn.awsli.com.br/600x1000/1843/1843438/produto/341189228/7432f27b3ff92de536245bdd8bd0e574-eb0gutwydz.jpg",
-    storeName: "Casas Bahia",
-    link: "https://www.casasbahia.com.br/jogo-de-6-copos-altos-420ml-borda-dourada-versalhes-lehavi/p/1582226273",
-  },
-  {
-    id: "fisico-copos-haus-concept-pavillion",
-    type: "physical",
-    titulo: "Jogo de Copos de Vidro 350ml 6 Peças Pavillion",
-    descricao: "Jogo de copos de vidro Haus Concept Pavillion, 6 peças, 350ml, multiuso para água, sucos e drinks.",
-    valor: "Presente físico",
-    foto: "https://img.economizeiro.com/5-2023/5292023115542AM.webp",
-    storeName: "Magazine Luiza",
-    link: "https://www.magazineluiza.com.br/jogo-de-copos-de-vidro-350ml-6-pecas-haus-concept-pavillion/p/231205400/ud/coco/",
   },
   {
     id: "fisico-conjunto-assar-servir-tramontina-cosmos",
@@ -445,16 +383,6 @@ export const physicalGifts: IPhysicalGift[] = [
     link: "https://www.wolycasa.com.br/products/jogo-de-jantar-20-pecas-pearl-cristal-wolff",
   },
   {
-    id: "fisico-prato-bolo-coracao-lyor",
-    type: "physical",
-    titulo: "Prato para Bolo com Pé e Tampa Coração Cristal",
-    descricao: "Prato para bolo Lyor em cristal, com pé, tampa em formato de coração, 25,5cm x 29cm.",
-    valor: "Presente físico",
-    foto: pratoBoloCoracao,
-    storeName: "WolyCasa",
-    link: "https://www.wolycasa.com.br/products/prato-para-bolo-com-pe-e-tampa-coracao-25-5cm-x-29cm-cristal-lyor",
-  },
-  {
     id: "fisico-rechaud-oval-dynasty",
     type: "physical",
     titulo: "Rechaud Oval em Porcelana com Queimador 2,3L",
@@ -463,16 +391,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: rechaudOvalDynasty,
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/rechaud-oval-em-porcelana-com-queimador-23l-dynasty/p/gchd5hbd8e/ud/rech/",
-  },
-  {
-    id: "fisico-wolff-xicaras-prato-doce",
-    type: "physical",
-    titulo: "Wolff 4 Xícaras, Prato Doce, Manteigueira e Açucareiro",
-    descricao: "Conjunto Wolff em cristal, linha Pearl, com 4 xícaras, prato para doce, manteigueira e açucareiro.",
-    valor: "Presente físico",
-    foto: wolffXicarasPearl,
-    storeName: "Mercado Livre",
-    link: "https://www.mercadolivre.com.br/wolff--4-xicaras--prato-doce--mantegueira--acucareiro/up/MLBU3383974968",
   },
   {
     id: "fisico-jogo-toalha-ondas-casa-dona",
@@ -503,16 +421,6 @@ export const physicalGifts: IPhysicalGift[] = [
     foto: "https://images.yampi.me/assets/stores/mr-enxovais/uploads/images/kit-coberdrom-dupla-face-casal-queen-soft-verde-militar-67d8d7fd55d3a-large.png",
     storeName: "Magazine Luiza",
     link: "https://www.magazineluiza.com.br/kit-coberdrom-casal-e-queen-5-pecas-400-fios-dupla-face-com-sherpa-mr-enxovais/p/hkdcdbdga4/cm/cobl/",
-  },
-  {
-    id: "fisico-jogo-cama-king-altenburg-ballerina",
-    type: "physical",
-    titulo: "Jogo de Cama King 4 Peças Altenburg Ballerina",
-    descricao: "Jogo de cama Altenburg, linha Ballerina, bordado em cetim, 300 fios, king, 4 peças.",
-    valor: "Presente físico",
-    foto: "https://altenburg.vtexassets.com/arquivos/ids/164980-800-800?v=639058932888130000&width=800&height=800&aspect=true",
-    storeName: "Altenburg",
-    link: "https://www.altenburg.com.br/jogo-de-cama-king-4-pecas-altenburg-bordados-em-cetim-300-fios-ballerina/p",
   },
   {
     id: "fisico-tanquinho-colormaq-lcs15",

@@ -147,7 +147,7 @@ export default function ConvidadosClient() {
                     className="w-full bg-transparent py-1 text-base font-casamento-cormorant focus:outline-none appearance-none cursor-pointer"
                     style={{ color: "#95815a" }}
                   >
-                    {Array.from({ length: 11 }, (_, i) => (
+                    {Array.from({ length: 3 }, (_, i) => (
                       <option key={i} value={i}>
                         {i === 0
                           ? "Nenhum"
